@@ -1,0 +1,20 @@
+main {
+    border: 1px #1b1a28 solid;
+    width: 500px;
+    background-color: #5380dc;
+}
+section {
+    width: 400px;
+    background-color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    size: 25px;
+    color: #205ec2;
+}
+h2 {
+    size: 18px;
+    font-weight: lighter;
+}

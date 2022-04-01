@@ -1,0 +1,88 @@
+/* geral */
+
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: Operator Mono;
+    border: 0px;
+}
+body {
+    background-color: rgb(241, 241, 241);
+}
+
+textarea:focus, input:focus {
+    outline:none;
+}
+
+a {
+    font-size: .8rem;
+    text-decoration: none;
+    color: #08558b;
+}
+a:hover {
+    color: rgb(80, 128, 170);
+}
+/* container login */
+.login-container {
+    background-color: white;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    margin-top: 40vh;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow:5px 10px 10px;
+
+}
+
+/* formulario */
+
+form {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input, button {
+    background-color: rgb(224, 224, 224);
+    display: block;
+    width: 95%;
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+}
+button {
+    background-color: #08558b;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #1B223c;
+    transition: .5s;
+}
+.social-container, .social-container p {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+a:hover {
+    transition: .5s;
+}
+.social-container i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    line-height: 40px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.fa-linkedin {
+    background-color: #0077B5
+}
+.fa-facebook {
+    background-color: #3B5998;
+}

@@ -1,0 +1,39 @@
+body {
+    margin: 10px;
+}
+
+aside {
+    float: left;
+    width: 20%;
+    position: fixed;
+    left: 0;
+}
+
+.article {
+    float: left;
+    width: 80%;
+    margin-left: 20%;
+}
+pre {
+    padding: 0;
+}
+
+p {
+    padding-bottom: 120%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
