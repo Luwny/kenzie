@@ -1,0 +1,47 @@
+* {
+    font-family: Operator Mono;
+}
+nav {
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+}
+img {
+    width: 300px;
+}
+h1, h3, nav {
+    text-align: center;
+    color: white;
+
+}
+section {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+    background-color: black;
+}
+a {
+    text-decoration: none;
+    color: #08558b;
+}
+figcaption {
+    color: white;
+    text-align: justify;
+}
+a:hover {
+    transition: .5s;
+    color: white;
+}
+footer {
+    width: 100%;
+    background-color: #08558b;
+    text-align: center;
+    bottom: 0;
+    position:fixed;
+    color: white;
+
+}

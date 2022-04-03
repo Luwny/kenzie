@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    float: left;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+img {
+    width: 200px;
+    height: 150px;
+}
+
+h1, p, figcaption {
+    text-align: center;
+}
+.bloco1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
