@@ -1,0 +1,19 @@
+div {
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    margin: 20px;
+    background-color: rgb(130, 199, 255);
+    box-shadow: 5px 5px 5px;
+    
+}
+body {
+    background: white
+}
+
+h1 {
+    font-size: 10px;
+}
+p {
+    font-size: 5px;
+}

@@ -1,0 +1,15 @@
+div {
+    width: 200px;
+    padding: 20px;
+    margin: 20px;
+    background-color: blue;
+    border-style: dashed;
+    box-shadow: 5px 5px 5px;
+    border-radius: 10px;
+    border-color: white;
+    border-width: 2px ;
+    
+}
+body {
+    background: black;
+}

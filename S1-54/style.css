@@ -1,0 +1,19 @@
+* {
+    font-family: Operator Mono;
+}
+.box1 {
+    background-color: #ef482a;
+    width: 300px;
+    height: 300px;
+}
+.box2 {
+    background-color: #6e71fc;
+    width: 300px;
+    height: 300px;
+}
+.box3 {
+    background-color: #000000;
+    width: 300px;
+    height: 300px;
+    color: white;
+}
