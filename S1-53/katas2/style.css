@@ -1,0 +1,17 @@
+* {
+    font-family: Operator Mono;
+    text-transform: uppercase;
+}
+a {
+    text-decoration: none;
+    color: gray;
+    margin: 5px;
+    background-color: black;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+}
+a:hover {
+    transition: .5s;
+    color: rgb(255, 255, 255);
+}

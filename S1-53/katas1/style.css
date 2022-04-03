@@ -1,0 +1,11 @@
+* {
+    font-family: Operator Mono;
+}
+a {
+    text-decoration: none;
+    color: gray;
+}
+a:hover {
+    transition: .5s;
+    color: rgb(15, 57, 94);
+}
