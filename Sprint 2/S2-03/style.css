@@ -1,0 +1,30 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+header {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px .1px 10px rgb(206, 206, 206);
+}
+html {
+    background-color: rgb(235, 235, 235);
+}
+h1 {
+    display: inline;
+    color: #4C6EF5;
+}
+ul {
+    margin-right: 30px;
+    list-style: none;
+    overflow: hidden;
+}
+a {
+    color:#343A40;
+}
+li {
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}

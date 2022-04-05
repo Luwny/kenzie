@@ -2,6 +2,7 @@
     font-family: Operator Mono;
     margin:0px;
     list-style-type: none;
+    overflow:hidden;
 }
 html {
     background-color: black;
@@ -26,11 +27,20 @@ h1 {
 .users-geral {
     justify-content: center;
     display: flex;
+
+}
+.users-geral > li > figure {
+    border: 1px transparent solid;
+    border-radius: 10px;
+}
+.users-geral > li:hover > figure {
+    border: 1px white solid;
+    border-radius: 10px;
+    transition: 1s;
 }
 .imguser {
     margin-right: 20px;  
     border-radius: 5px;  
-    border: 1px solid transparent;
     overflow: hidden;
     max-width: 100%;
 }
@@ -40,6 +50,7 @@ figure {
     overflow: hidden;
     margin-right: 10px;
     border-radius: 10px;
+
 }
 figcaption {
     text-align: center;
@@ -65,17 +76,14 @@ ul img:hover {
     cursor: pointer;
     transform: scale(1.2);
     transition: .5s;
-    border: 1px white solid;
     box-sizing: border-box;
 }
 .imguseradd {
     opacity: 30%;
-    border: 1px solid transparent;
     border-radius: 5px;
 }
 .imguseradd:hover {
     opacity: 100%;
-    border: 1px white solid;
 }
 button:hover {
     background-color: white;

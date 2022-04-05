@@ -1,0 +1,14 @@
+.boxMain {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.boxItem {
+    display: block;
+    width: 270;
+    height: 230;
+    background-color: gray;
+    border-radius: 8px;
+    margin-top: 174px;
+    padding: 150px;
+}
