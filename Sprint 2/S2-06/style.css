@@ -1,0 +1,71 @@
+* {
+    font-family: Operator Mono;
+    overflow: hidden
+}
+body {
+    background-color: black;
+}
+section {
+    background-color: rgb(29, 29, 29);
+    border-radius: 20px;
+    width: 65vw;
+    height: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20vh;
+}    
+.hd-container {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+.users-geral {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    overflow: hidden;
+}
+figure {
+    margin: 0 10px;
+    max-width: 100%;
+}
+figcaption {
+    text-align: center;
+}
+button {
+    display: block;
+    border-radius: 10px;
+    padding: 15px 30px;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    border: 2px white solid;
+    font-weight: lighter;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+figcaption {
+    color: gray;
+}
+.logokenzie {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imguser {
+    margin:0px;
+}
+.imguser:hover {
+    transition: .1s;
+    border: 2px white solid;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+button:hover {
+    transition: .5s;
+    border-color: white;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    transform: scale(1.1);
+}
