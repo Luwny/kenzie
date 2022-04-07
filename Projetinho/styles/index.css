@@ -265,16 +265,20 @@ header {
 .aboutContainer>article {
     width: 500px;
     height: 100px;
-    background-color: gray;
-
+    margin-left: 50px;
+    color: white;
 }
 
 .aboutContainer>figure>img {
     width: 250px;
     border-radius: 90px;
+    border: 2px solid white;
 }
 
 .contactContainer {
     width: 100%;
-    margin-left: 900px;
+}
+.contactContainer>form>input {
+    display: block;
+    margin: auto;
 }
