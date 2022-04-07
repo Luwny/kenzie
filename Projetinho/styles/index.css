@@ -116,7 +116,7 @@ header {
 
 .projectsContainer {
     width: 100%;
-    height: 400px;
+    height: 450px;
     margin-top: 70px;
     background-color: rgb(35, 0, 99);
 }
@@ -150,6 +150,26 @@ header {
     margin-left: 20px;
     margin-top: 20px;
     background-color: rgb(50, 10, 124);
+}
+.projectsContainer>form {
+    width: 100%;
+}
+.projectsContainer>form>button {
+    justify-content: center;
+    color: white;
+    background-color: rgb(60, 71, 172);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    margin-left: 48.5%;
+}
+.projectsContainer>form>button:hover {
+    transform: scale(1.1);
+    transition: .5s;
+    cursor: pointer;
+    font-weight: bolder;
+    background-color: rgb(29, 0, 82);
 }
 .aboutContainer {
     width: 100%;
