@@ -61,7 +61,7 @@ header {
     border-radius: 20px;
     font-size: 1em;
     color: white;
-    border: 1px solid white;
+    border: 2px solid white;
     font-weight: lighter;
     cursor: pointer;
 }
@@ -172,8 +172,42 @@ header {
     background-color: rgb(29, 0, 82);
 }
 .aboutContainer {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     height: 700px;
     margin-top: 70px;
     background-color: rgb(35, 0, 99);
+    justify-content: center;
+}
+.aboutContainer>h1 {
+    width: 100%;
+    text-align: center;
+    color:white;
+    font-size: 3em;
+    text-decoration: underline 3px;
+    text-underline-offset: 10px;
+    margin-bottom: 30px;
+    text-decoration-color: rgb(77, 0, 221); 
+}
+.aboutContainer>p {
+    width: 100%;
+    text-align: center;
+    color:white;
+    font-size: 2em;
+    margin-bottom: 30px;
+    text-decoration-color: rgb(77, 0, 221); 
+}
+.aboutContainer>p>strong {
+    text-align: center;
+    color:rgb(77, 0, 221);
+}
+.aboutContainer>article {
+    width: 500px;
+    background-color: gray;
+    
+}
+.aboutContainer>figure>img {
+    width: 250px;
+    border-radius: 90px;
 }
