@@ -4,6 +4,7 @@
     border: 0px;
     font-family: Operator Mono;
     text-decoration: none;
+    list-style: none;
 }
 
 html {
@@ -14,8 +15,16 @@ header {
     width: 100%;
     height: 100px;
     background-color: rgb(35, 0, 99);
+    display: flex;
 }
+header>.navigationBar {
+    display: flex;
 
+}
+.navigationBar>figure>img {
+    width: 7%;
+    margin-left: 200px;
+}
 .personalData {
     margin-right: 500px;
 }
@@ -281,11 +290,19 @@ header {
 .contactContainer>form>input {
     display: block;
     margin: auto;
-    padding-right: 10%;
+    padding-right: 35%;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 7px;
     border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-weight: lighter;
+    opacity: 50%;
+}
+.contactContainer>form>input::placeholder {
+    color: white;
+    font-weight: lighter;
 }
 .contactContainer>form>.messageContact {
     padding-top: 5%;
@@ -300,7 +317,6 @@ header {
     border: 2px solid rgb(255, 255, 255);
     margin-top: 20px;
     margin-left: 47%;
-
 }
 .contactContainer>form>button:hover {
     transform: scale(1.1);
