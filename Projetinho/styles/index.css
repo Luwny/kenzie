@@ -1,3 +1,5 @@
+/* Reset */
+
 * {
     margin: 0px;
     padding: 0px;
@@ -11,6 +13,7 @@ html {
     background-color: rgb(29, 0, 82);
 }
 
+/* Barra de navegação */
 header {
     width: 100%;
     height: 100px;
@@ -42,6 +45,8 @@ header>.navigationBar {
     transition: .2s;
     cursor: pointer;
 }
+
+/* Adam */
 .personalData {
     margin-right: 500px;
 }
@@ -111,6 +116,7 @@ header>.navigationBar {
     background-color: rgb(29, 0, 82);
 }
 
+/* Parte das Skills */
 .skillsContainer {
     width: 100%;
     height: 1050px;
@@ -154,6 +160,10 @@ header>.navigationBar {
     margin: 0 auto;
     margin-top: 20px;
 }
+.skillsContainer>.featuredSkills>.boxSkills:hover {
+    transform: scale(1.01);
+    transition: .5s;
+}
 .skillsContainer>.featuredSkills>.boxSkills>.contentBoxSkills {
     width: 100%;
     height: 100%;
@@ -181,9 +191,11 @@ header>.navigationBar {
     color: white;
     margin: 10px;
 }
+
+/* Parte dos Projetos */
 .projectsContainer {
     width: 100%;
-    height: 450px;
+    height: 600px;
     margin-top: 70px;
     background-color: rgb(35, 0, 99);
 }
@@ -212,22 +224,85 @@ header>.navigationBar {
 }
 
 .projectsContainer>.projectsBoxGeral {
-    width: 80%;
-    height: 240px;
+    width: 100%;
+    height: 400px;
     margin: auto;
     justify-content: center;
     display: flex;
 }
 
 .projectsContainer>.projectsBoxGeral>.projectsBox {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 350px;
     border-radius: 10px;
     margin-left: 20px;
     margin-top: 20px;
     background-color: rgb(50, 10, 124);
+    display: flex;
+    flex-wrap: wrap;
 }
-
+.projectsContainer>.projectsBoxGeral>.projectsBox>.contentProjectsBox {
+    width: 100%;
+    height: 100%;
+}
+.projectsContainer>.projectsBoxGeral>.projectsBox>.contentProjectsBox>figure {
+    margin-left: 70px;
+    margin-top: 10px;
+}
+.projectsContainer>.projectsBoxGeral>.projectsBox>.contentProjectsBox>figure>img {
+    width: 70%;
+    border-radius: 10px;
+    opacity: 50%;
+}
+.projectsContainer>.projectsBoxGeral>.projectsBox>.contentProjectsBox>figure>img:hover {
+    opacity: 100%;
+    transition: .2s;
+}
+.projectsContainer>.projectsBoxGeral>.projectsBox>.contentProjectsBox>h3 {
+    color: #0077B5;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.projectsContainer>.projectsBoxGeral>.projectsBox>.contentProjectsBox>p {
+    color: white;
+    text-align: justify;
+    font-size: .8em;
+    font-weight: lighter;
+    margin: 10px;
+}
+.projectsContainer>.projectsBoxGeral>.projectsBox>.contentProjectsBox>form {
+    margin-left: 50px
+}
+.projectsContainer>.projectsBoxGeral>.projectsBox>.contentProjectsBox>form>.live {
+    padding: 10px;
+    border-radius: 10px;
+    background-color:rgb(60, 71, 172);
+    border: 2px solid rgb(60, 71, 172);
+    color: white;
+}
+.projectsContainer>.projectsBoxGeral>.projectsBox>.contentProjectsBox>form>.git {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(60, 71, 172);
+    background-color: transparent;
+    color: white;
+}
+.projectsContainer>.projectsBoxGeral>.projectsBox>.contentProjectsBox>form>.live:hover {
+    transform: scale(1.1);
+    background-color:#0077B5;
+    border: 2px solid rgb(255, 255, 255);
+    transition: .3s;
+    cursor: pointer;
+}
+.projectsContainer>.projectsBoxGeral>.projectsBox>.contentProjectsBox>form>.git:hover{
+    transform: scale(1.1);
+    border-radius: 10px;
+    background-color:#141357;
+    border: 2px solid rgb(255, 255, 255);
+    transition: .3s;
+    cursor: pointer;
+}
 .projectsContainer>form {
     width: 100%;
 }
@@ -250,7 +325,7 @@ header>.navigationBar {
     font-weight: bolder;
     background-color: rgb(29, 0, 82);
 }
-
+/* Parte do sobre mim */
 .aboutContainer {
     display: flex;
     flex-wrap: wrap;
@@ -300,7 +375,9 @@ header>.navigationBar {
     margin-bottom: 10px;
     margin-top: 20px;
 }
-
+.contactPhoto {
+    margin-left: 20px;
+}
 .contactPhoto>.socialContainer>i {
     width: 40px;
     height: 40px;
@@ -343,7 +420,7 @@ header>.navigationBar {
     border-radius: 90px;
     border: 2px solid white;
 }
-
+/* Parte do contato */
 .contactContainer {
     width: 100%;
 }
