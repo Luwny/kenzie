@@ -232,7 +232,7 @@ header>.navigationBar {
 
 .projectsContainer>.projectsBoxGeral>.projectsBox {
     width: 300px;
-    height: 350px;
+    height: 370px;
     border-radius: 10px;
     margin-left: 20px;
     margin-top: 20px;
@@ -248,12 +248,12 @@ header>.navigationBar {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 5px;
 }
 .projectsContainer>.projectsBoxGeral>.projectsBox>.contentProjectsBox>figure>img {
     width: 70%;
     border-radius: 10px;
     opacity: 50%;
+    margin-top: 5px;
 }
 .projectsContainer>.projectsBoxGeral>.projectsBox>.contentProjectsBox>figure>img:hover {
     opacity: 100%;
@@ -273,7 +273,9 @@ header>.navigationBar {
     margin: 10px;
 }
 .projectsContainer>.projectsBoxGeral>.projectsBox>.contentProjectsBox>form {
-    margin-left: 50px
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .projectsContainer>.projectsBoxGeral>.projectsBox>.contentProjectsBox>form>.live {
     padding: 10px;
@@ -288,6 +290,7 @@ header>.navigationBar {
     border: 2px solid rgb(60, 71, 172);
     background-color: transparent;
     color: white;
+    margin-left: 5px;
 }
 .projectsContainer>.projectsBoxGeral>.projectsBox>.contentProjectsBox>form>.live:hover {
     transform: scale(1.1);
@@ -307,9 +310,9 @@ header>.navigationBar {
 .projectsContainer>form {
     display: flex;
     justify-content: center;
-
     align-items: center;
     width: 100%;
+    margin-top: 10px;
 }
 
 .projectsContainer>form>button {
