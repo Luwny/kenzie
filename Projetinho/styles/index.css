@@ -153,36 +153,33 @@ header>.navigationBar {
     border-radius: 10px;
     margin: 0 auto;
     margin-top: 20px;
+}
+.skillsContainer>.featuredSkills>.boxSkills>.contentBoxSkills {
+    width: 100%;
+    height: 100%;
+}
+.skillsContainer>.featuredSkills>.boxSkills>.contentBoxSkills>figure {
+    height: 40%;
+    width: 100%;
+    text-align: center;
+    font-size: 9em;
+    color:#0077B5;
+}
+.skillsContainer>.featuredSkills>.boxSkills>.contentBoxSkills>.imgBoxSkills>.fa-github {
     background-color: transparent;
 }
-.skillsContainer>.featuredSkills>.boxSkills>figure {
-    w
-    display: flex;
+.skillsContainer>.featuredSkills>.boxSkills>.contentBoxSkills>h2 {
+    margin-top: 30px;
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px
 }
-.skillsContainer>.featuredSkills>.boxSkills>.html{
-    width: 50%;
-    height: 50%;
-    margin: auto;
-
-}
-.skillsContainer>.featuredSkills>.boxSkills>.css {
-    width: 35%;
-    height: 45%;
-    margin: auto;
-}
-.skillsContainer>.featuredSkills>.boxSkills>.js {
-    width: 50%;
-    height: 50%;
-    margin: auto;
-}
-.skillsContainer>.featuredSkills>.boxSkills>.react {
-
-}
-.skillsContainer>.featuredSkills>.boxSkills>.nodejs {
-
-}
-.skillsContainer>.featuredSkills>.boxSkills>.python {
-
+.skillsContainer>.featuredSkills>.boxSkills>.contentBoxSkills>p {
+    margin-top: ;
+    text-align: justify;
+    color: white;
+    margin: 10px;
 }
 .projectsContainer {
     width: 100%;
