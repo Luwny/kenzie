@@ -155,7 +155,35 @@ header>.navigationBar {
     margin-top: 20px;
     background-color: transparent;
 }
+.skillsContainer>.featuredSkills>.boxSkills>figure {
+    w
+    display: flex;
+}
+.skillsContainer>.featuredSkills>.boxSkills>.html{
+    width: 50%;
+    height: 50%;
+    margin: auto;
 
+}
+.skillsContainer>.featuredSkills>.boxSkills>.css {
+    width: 35%;
+    height: 45%;
+    margin: auto;
+}
+.skillsContainer>.featuredSkills>.boxSkills>.js {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+}
+.skillsContainer>.featuredSkills>.boxSkills>.react {
+
+}
+.skillsContainer>.featuredSkills>.boxSkills>.nodejs {
+
+}
+.skillsContainer>.featuredSkills>.boxSkills>.python {
+
+}
 .projectsContainer {
     width: 100%;
     height: 450px;
