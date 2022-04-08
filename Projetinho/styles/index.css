@@ -18,24 +18,27 @@ header {
 }
 header>.navigationBar {
     display: flex;
-    width: 100%;
-    height: 200px;
 
 }
 .navigationBar>figure>img {
-    width: 9.8%;
+    margin-top: 3px;
+    width: 9%;
     margin-left: 140px;
+}
+.navigationBar>ul {
+    margin-left: 300px;
+    margin-top: 30px;
 }
 .navigationBar>ul>li {
     display: inline;
     text-align: center;
     margin-left: 20px;
-    font-size: 2em;
-    font-weight: lighter;
+    font-size: 1.8em;
+    font-weight: bolder;
     color: white;
 }
 .navigationBar>ul>li:hover {
-    font-weight: normal;
+    color: #0077B5;
     transition: .2s;
     cursor: pointer;
 }
@@ -81,6 +84,10 @@ header>.navigationBar {
 .personalContainer>.personalData>form>button {
     text-decoration: none;
     color: white;
+}
+.personalContainer>.personalData>form>button>i {
+    background-color: transparent;
+    font-size: 2em;
 }
 
 .personalContainer>.personalData>form>button {
@@ -174,6 +181,10 @@ header>.navigationBar {
 .projectsContainer>.projectsDescription>a {
     color: rgb(77, 0, 221);
 }
+.projectsContainer>.projectsDescription>a:hover {
+    color: #0077B5;
+    transition: .3s;
+}
 
 .projectsContainer>.projectsBoxGeral {
     width: 80%;
@@ -245,9 +256,14 @@ header>.navigationBar {
     text-decoration-color: rgb(77, 0, 221);
 }
 
-.aboutContainer>p>strong {
+.aboutContainer>p>a {
     text-align: center;
     color: rgb(77, 0, 221);
+    cursor: pointer;
+    transition: .3s;
+}
+.aboutContainer>p>a:hover {
+    color: #0077B5;
 }
 
 .contactPhoto>p {
@@ -284,12 +300,17 @@ header>.navigationBar {
 .fa-github {
     background-color: black;
 }
+.contactPhoto>.socialContainer>i:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
 
 .aboutContainer>article {
     width: 500px;
     height: 100px;
     margin-left: 50px;
     color: white;
+    text-align: justify;
 }
 
 .aboutContainer>figure>img {
