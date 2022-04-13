@@ -1,16 +1,21 @@
 // Ativ. 1
-let valor1 = 15
-let valor2 = 876
-console.log (valor1+valor2)
+//let valor1 = 15
+//let valor2 = 876
+//console.log (valor1+valor2)
 
 //Ativ. 2
-function myFunction(valor) {
-    console.log(typeof valor);
-}
-myFunction("text");
+//function myFunction(valor) {
+//    console.log(typeof valor);
+//}
+//myFunction("text");
 
 //Ativ. 3
-function myFunction2(nota1, nota2, nota3, nota4){
-    console.log(nota1+nota2+nota3+nota4)
+function myFunction(n1, n2, n3, n4) {
+    if (typeof n1 ==  'number' && typeof n2 ==  'number' && typeof n3 ==  'number' && typeof n4 ==  'number') {
+        console.log(n1+n2+n3+n4)
+    }
+    else {
+        console.log('O campo só pode receber números.')
+    }
 }
-myFunction2(1, 2, 3, 4)
+myFunction(8, '6', 9, 3)
