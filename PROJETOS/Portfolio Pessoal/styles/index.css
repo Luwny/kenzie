@@ -29,7 +29,6 @@ header>.navigationBar {
     margin-left: 140px;
 }
 .navigationBar>ul {
-    margin-left: 300px;
     margin-top: 30px;
 }
 .navigationBar>ul>li {
@@ -185,7 +184,6 @@ header>.navigationBar {
     margin-bottom: 30px
 }
 .skillsContainer>.featuredSkills>.boxSkills>.contentBoxSkills>p {
-    margin-top: ;
     text-align: justify;
     color: white;
     margin: 10px;

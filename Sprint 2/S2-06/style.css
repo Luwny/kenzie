@@ -18,6 +18,11 @@ section {
 .logokenzie {
     display: block;
     margin: 0 auto;
+    
+}
+.logokenzie:hover {
+    transform:scale(1.1);
+    transition: .5s;
 }
 h1 {
     color: white;
