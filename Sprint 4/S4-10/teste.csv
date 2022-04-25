@@ -1,0 +1,8 @@
+i;sum;array[i];array[i] % 2 !== 0;console.log
+0;5;5;true;-
+1;8;3;true;-
+2;-;2;false;-
+3;-;10;false;-
+4;9;1;true;-
+5;10;1;true;-
+6;;;;10
