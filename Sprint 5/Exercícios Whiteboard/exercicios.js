@@ -159,17 +159,17 @@ const frase = 'Vou gabaritar meu whiteboard'
 //4
 //Retornar quantidade de palavras com número par
 
-// function myFunction(param) {
-//     let array = param.split(' ')
-//     let counter = 0
-//     for (let i = 0; i < array.length; i++) {
-//         if (array[i].length % 2 === 0) {
-//             counter++
-//         }
-//     }
-//     console.log(counter)
-// }
-// myFunction(frase)
+function myFunction(param) {
+    let array = param.split(' ')
+    let counter = 0
+    for (let i = 0; i < array.length; i++) {
+        if (array[i].length % 2 === 0) {
+            counter++
+        }
+    }
+    console.log(counter)
+}
+myFunction('Vou gabaritar meu whiteboard')
 
 //5
 //Retornar todas com tamanho par em letra maiúscula
