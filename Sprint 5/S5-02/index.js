@@ -7,16 +7,16 @@ function snapCrackle(maxValue) {
             } else {
                 result += 'Snap, '
             }
-            if (i % 5 === 0) {
-                result += 'Crackle, '
-            }
+        } else if (i % 5 === 0) {
+            result += 'Crackle, '
         } else {
             result += i + ', '
         }
     }
     return result.slice(0, -2)
 }
-snapCrackle(14)
+console.log('Snapcrackle:')
+console.log(snapCrackle(12))
 
 function snapCracklePrime(maxValue) {
     let primeValue = ""
@@ -43,6 +43,7 @@ function snapCracklePrime(maxValue) {
         }
         primeValue += ", "
     }
-    return primeValue
+    return primeValue.slice(0, -2)
 }
-snapCracklePrime()
+console.log('SnapCracklePrime:')
+console.log(snapCracklePrime(15))
