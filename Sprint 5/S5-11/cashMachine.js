@@ -18,49 +18,58 @@ let counter10 = 0
 let counter5 = 0
 let counter2 = 0
 
-function cashMachine(dinheiro, saque) {
-    console.log(`Dinheiro em conta: R$ ${dinheiro},00`)
-    let valorAt = saque
-    console.log(`Você deseja sacar R$ ${saque},00`)
-    while (valorAt >= 200) {
-        valorAt = valorAt - 200
-        counter200++
+function cashMachine(saque, salario) {
+    let current = saque
+    let dinheiroAt = salario - saque
+    //verificação se o caboco tem dinheiro na conta
+    if (saque <= salario) {
+        console.log(`Seu dinheiro em conta era de R$ ${salario}`)
+        console.log(`O valor do saque foi de R$ ${saque}`)
+        //contadores e redução do valor em conta
+        while (current >= 200) {
+            current = current - 200
+            counter200++
+        }
+        while (current >= 100) {
+            current = current - 10
+            counter200++
+        }
+        while (current >= 50) {
+            current = current - 50
+            counter50++
+        }
+        while (current >= 20) {
+            current = current - 20
+            counter20++
+        }
+        while (current >= 10) {
+            current = current - 10
+            counter10++
+        }
+        while (current >= 5) {
+            current = current - 5
+            counter5++
+        }
+        while (current >= 2) {
+            current = current - 2
+            counter2++
+        }
+// Qtd notas
+        console.log(`Foram usadas notas de:
+${counter200} de R$ 200,00 
+${counter100} de R$ 100,00
+${counter50} de R$ 50,00
+${counter20} de R$ 20,00
+${counter10} de R$ 10,00
+${counter5} de R$ 5,00
+${counter2} de R$ 2,00`)
+//Valor do saque
+console.log(`Após o saque, o valor em conta atual é de: R$ ${dinheiroAt}`)
+    } else {
+        console.log(`Você não tem dinheiro suficiente para esta operação.`)
     }
-    while (valorAt >= 100) {
-        valorAt = valorAt - 100
-        counter100++
-    }
-    while (valorAt >= 50) {
-        valorAt = valorAt - 50
-        counter50++
-    }
-    while (valorAt >= 20) {
-        valorAt = valorAt - 20
-        counter20++
-    }
-    while (valorAt >= 10) {
-        valorAt = valorAt - 10
-        counter10++
-    }
-    while (valorAt >= 5) {
-        valorAt = valorAt - 5
-        counter5++
-    }
-    while (valorAt >= 2) {
-        valorAt = valorAt - 2
-        counter2++
-    }
-    console.log(`O saque foi feito com notas de :
-     ${counter200} : R$ 200,00 
-     ${counter100} : R$ 100,00 
-     ${counter50} : R$ 50,00 
-     ${counter20} : R$ 20,00 
-     ${counter10} : R$ 10,00 
-     ${counter5} : R$ 5,00 
-     ${counter2} : R$ 2,00`)
-    console.log(`O novo valor do seu dinheiro em conta é de R$ ${dinheiro - saque}`)
 }
-cashMachine(calculateSalary(1200, 2000), 497)
+cashMachine(547, calculateSalary(1400, 10000))
 
 function calculateStock() {
 
@@ -86,10 +95,13 @@ const array = [
     [4, 5, 6],
     [7, 8, 9]
 ]
-
+let result = []
 function getDiagonal(param) {
     for (let i = 0; i < param.length; i++){
-        console.log(param[i])
+        for (let j = 0; j < param[i]; j++) {
+           
+        }       
     }
+    console.log(result)
 }
 getDiagonal(array)
