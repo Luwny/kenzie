@@ -55,7 +55,7 @@ function cashMachine(saque, salario) {
             counter2++
         }
 // Qtd notas
-        console.log(`Foram usadas notas de:
+console.log(`Foram usadas notas de:
 ${counter200} de R$ 200,00 
 ${counter100} de R$ 100,00
 ${counter50} de R$ 50,00
