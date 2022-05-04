@@ -1,0 +1,10 @@
+str;i;str.length;i < str.length;str[i];str[i] == 'i';console.log;i++
+'peixinho';0;8;true;p;false;-;0+1
+'peixinho';1;8;true;e;false;-;1+1
+'peixinho';2;8;true;i;true;peixinho;2+1
+'peixinho';3;8;true;x;false;-;3+1
+'peixinho';4;8;true;i;true;peixinho;4+1
+'peixinho';5;8;true;n;false;-;5+1
+'peixinho';6;8;true;h;false;-;6+1
+'peixinho';7;8;true;o;false;-;7+1
+'peixinho';8;8;false;-;-;-;-
