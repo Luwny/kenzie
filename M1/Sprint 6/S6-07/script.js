@@ -14,20 +14,19 @@ function multiply(n1, n2) {
 console.log(`Função MULTIPLY:`)
 console.log(multiply(6, 8))
 
-function power(n) {
+function power(n1, n2){
     let result = 1
-    for (let i = 1; i <= n; i = add(i, 1)) {
-        result = multiply(i, result)
+    for (let i = 0; i < n2; i = add(i, 1)) {
+        result = multiply(n1, result)
     }
     return result
 }
-console.log(`Função EXPONENCIAL:`)
-console.log(power(5))
+console.log(`Função POTÊNCIA:`)
+console.log(power(3, 4))
 
 function factorial(n) {
 
     let result = 1
-
     for (let i = 1; i <= n; i = add(i, 1)) {
         result = multiply(i, result)
     }

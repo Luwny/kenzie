@@ -13,14 +13,6 @@ function newWords(frase) {
   }
   let regex = /i/gi
   newArray = newArray.join(' ').replace(regex, '!').split(' ')
-  /*   let arrayResult = []
-    for (let i = 0; i < newArray.length; i++) {
-      for (let j = 0; j < newArray[i].length; j++) {
-        if (newArray[i][j] == '!') {
-          arrayResult.push(newArray[i])
-        }
-      }
-    } */
   return newArray
 }
 console.log(newWords(arrayTeste))
