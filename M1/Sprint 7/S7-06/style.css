@@ -1,0 +1,32 @@
+body {
+    background-color: #303e73;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#block_center {
+    width: 80%;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    }
+    #element_distiny {
+    border: 5px solid #5165ae;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 50px;
+    }
+    #element_origin {
+    background-color: #560425;
+    border-radius: 50%;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    top: 0px;
+    left: 0px;
+    }
