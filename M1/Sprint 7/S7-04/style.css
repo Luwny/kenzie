@@ -1,0 +1,12 @@
+.contador {
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.contador:hover { 
+    cursor: pointer;
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+.escondido {
+    display:none
+}
