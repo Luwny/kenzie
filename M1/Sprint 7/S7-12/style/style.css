@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: operator mono;
+    text-decoration: none;
+    list-style: none;
+    transition:1s;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main>.geralBox {
+    position: relative;
+    margin-top: 30vh;
+    width: 60vh;
+    height: 50vh;
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 20px;
+}
+main>.geralBox>.title {
+    margin-bottom: 20px;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+}
+main>.geralBox>.item {
+    display:flex;
+    background-color: black;
+    padding: 15px;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+main>.geralBox>.item>h4 {
+    margin: 5px;
+    background-color: black;   
+    color: white;
+}
+main>.geralBox>ul>li {
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+    padding: 15px;
+    border-radius:10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+main>.geralBox>ul>li:hover {
+    transform: scale(1.03);
+    transition: .5s;
+    cursor: pointer;
+}
+main>.geralBox>.result>ul>li {
+    padding: 25px;
+    margin-top: 10px;
+    display: flex;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgb(228, 228, 228);
+    justify-content: space-between;
+}
+main>.geralBox>.end>button {
+    margin-top: 10px;
+    background-color: rgb(78, 190, 166);
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+    margin-bottom: 10px;
+}
+
+main>.geralBox>.end>button:hover {
+    background-color: rgb(22, 156, 127);
+}
