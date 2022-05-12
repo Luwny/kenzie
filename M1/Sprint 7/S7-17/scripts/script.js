@@ -41,17 +41,17 @@ sectionContainer3.appendChild(h1Higiene)
 
 //Criando MAIN CLASSE PRODUCTS-CONTENT FRUITS
 const mainPC1 = document.createElement('main')
-mainPC1.classList.add('products-content')
+mainPC1.classList.add('products-content', 'fruits')
 sectionContainer1.appendChild(mainPC1)
 
 //Criando MAIN CLASSE PRODUCTS-CONTENT BEBIDAS
 const mainPC2 = document.createElement('main')
-mainPC2.classList.add('products-content')
+mainPC2.classList.add('products-content', 'drinks')
 sectionContainer2.appendChild(mainPC2)
 
 //Criando MAIN CLASSE PRODUCTS-CONTENT HIGIENE
 const mainPC3 = document.createElement('main')
-mainPC3.classList.add('products-content')
+mainPC3.classList.add('products-content', 'hygiene')
 sectionContainer3.appendChild(mainPC3)
 
 //CRIAÇÃO DA UL PARA CADA MAIN PRODUCTS-CONTENT
