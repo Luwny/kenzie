@@ -23,7 +23,7 @@
                 <li>Todos</li>
                 <li>Hamburguer</li>
                 <li>Pizzas</li>
-                <li>Sorvetes</li>
+                <li>Frios</li>
             </ul>
         </nav>
     </header>
@@ -37,43 +37,43 @@
             </li>
             <li>
                 <img src="./assets/pizza.svg" alt="Descrição do Item">
-                <p>Pizza 4 pedaços</p>
+                <p>Pizza 1 sabor</p>
                 <p class="price">R$ 37,99</p>
                 <button>+</button>
             </li>
             <li>
-                <img src="./assets/ice-cream.svg" alt="Descrição do Item">
+                <img src="./assets/icecreamsimples.svg" alt="Descrição do Item">
                 <p>Sorvete simples</p>
                 <p class="price">R$ 7,99</p>
                 <button>+</button>
             </li>
             <li>
-                <img src="./assets/pizza.svg" alt="Descrição do Item">
-                <p>Hamburguer</p>
+                <img src="./assets/milkshake.svg" alt="Descrição do Item">
+                <p>Milkshake</p>
+                <p class="price">R$ 57,99</p>
+                <button>+</button>
+            </li>
+            <li>
+                <img src="./assets/burguer-duplo.svg" alt="Descrição do Item">
+                <p>Hamburguer duplo</p>
+                <p class="price">R$ 39,99</p>
+                <button>+</button>
+            </li>
+            <li>
+                <img src="./assets/pizza-6.svg" alt="Descrição do Item">
+                <p>Pizza 2 sabores</p>
                 <p class="price">R$ 27,99</p>
                 <button>+</button>
             </li>
             <li>
-                <img src="./assets/pizza.svg" alt="Descrição do Item">
-                <p>Hamburguer</p>
+                <img src="./assets/icecreamavancado.svg" alt="Descrição do Item">
+                <p>Sorvete e Milkshake</p>
                 <p class="price">R$ 27,99</p>
                 <button>+</button>
             </li>
             <li>
-                <img src="./assets/pizza.svg" alt="Descrição do Item">
-                <p>Hamburguer</p>
-                <p class="price">R$ 27,99</p>
-                <button>+</button>
-            </li>
-            <li>
-                <img src="./assets/pizza.svg" alt="Descrição do Item">
-                <p>Hamburguer</p>
-                <p class="price">R$ 27,99</p>
-                <button>+</button>
-            </li>
-            <li>
-                <img src="./assets/pizza.svg" alt="Descrição do Item">
-                <p>Hamburguer</p>
+                <img src="./assets/coffefrio.svg" alt="Descrição do Item">
+                <p>Cold Brew</p>
                 <p class="price">R$ 27,99</p>
                 <button>+</button>
             </li>
@@ -81,18 +81,31 @@
 
         <aside>
             <h1>Carrinho de Compras</h1>
-            <ul>
+            <ul class="selectedProducts">
                 <li>
                     <img src="./assets/burguer.svg" alt="Descrição do Item">
                     <p>Hamburguer</p>
                     <p class="price">R$ 27,99</p>
                     <button>-</button>
-                    <img src="./assets/burguer.svg" alt="Descrição do Item">
-                    <p>Hamburguer</p>
-                    <p class="price">R$ 27,99</p>
+                </li>
+                <li>
+                    <img src="./assets/burguer-duplo.svg" alt="Descrição do Item">
+                    <p>Hamburguer duplo</p>
+                    <p class="price">R$ 39,99</p>
                     <button>-</button>
                 </li>
+                <ul class="totalProducts">
+                    <li>
+                        <p>Quantidade de Itens:</p> <p class="totalItems">2</p>
+                    </li>
+                    <li>
+                        <p>Total: </p> <p class="totalPrice">R$ 00,00</p>
+                    </li>
+                    <button>Finalizar compra</button>
+                </ul>
+
             </ul>
+
         </aside>
     </main>
 </body>
