@@ -5,107 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Snows Market</title>
     <link rel="stylesheet" href="style/index.css">
-    <script defer src="db.js"></script>
-    <script defer src="script/index.js"></script>
+    <script defer src="./script/db.js"></script>
+    <script defer src="./script/dbCompras.js"></script>
+    <script defer src="./script/index.js"></script>    
 </head>
 
 <body>
     <header>
-        <nav>
-            <h1>Snows Market</h1>
-            <div class="campoPesquisa">
-                <input type="text" name="pesquisar" id="pesquisa" placeholder="Nome do produto">
-                <button>Pesquisar</button>
-            </div>
-            <ul>
-                <li>Todos</li>
-                <li>Hamburguer</li>
-                <li>Pizzas</li>
-                <li>Frios</li>
-            </ul>
-        </nav>
+
     </header>
     <main>
-        <ul>
-            <li>
-                <img src="./assets/burguer.svg" alt="Descrição do Item">
-                <p>Hamburguer</p>
-                <p class="price">R$ 27,99</p>
-                <button>+</button>
-            </li>
-            <li>
-                <img src="./assets/pizza.svg" alt="Descrição do Item">
-                <p>Pizza 1 sabor</p>
-                <p class="price">R$ 37,99</p>
-                <button>+</button>
-            </li>
-            <li>
-                <img src="./assets/icecreamsimples.svg" alt="Descrição do Item">
-                <p>Sorvete simples</p>
-                <p class="price">R$ 7,99</p>
-                <button>+</button>
-            </li>
-            <li>
-                <img src="./assets/milkshake.svg" alt="Descrição do Item">
-                <p>Milkshake</p>
-                <p class="price">R$ 57,99</p>
-                <button>+</button>
-            </li>
-            <li>
-                <img src="./assets/burguer-duplo.svg" alt="Descrição do Item">
-                <p>Hamburguer duplo</p>
-                <p class="price">R$ 39,99</p>
-                <button>+</button>
-            </li>
-            <li>
-                <img src="./assets/pizza-6.svg" alt="Descrição do Item">
-                <p>Pizza 2 sabores</p>
-                <p class="price">R$ 27,99</p>
-                <button>+</button>
-            </li>
-            <li>
-                <img src="./assets/icecreamavancado.svg" alt="Descrição do Item">
-                <p>Sorvete e Milkshake</p>
-                <p class="price">R$ 27,99</p>
-                <button>+</button>
-            </li>
-            <li>
-                <img src="./assets/coffefrio.svg" alt="Descrição do Item">
-                <p>Cold Brew</p>
-                <p class="price">R$ 27,99</p>
-                <button>+</button>
-            </li>
+        <ul class='vitrine'>
         </ul>
 
-        <aside>
-            <h1>Carrinho de Compras</h1>
+        <aside class="carrinho">
+            <h1 class="h1Carrinho">Carrinho de Compras</h1>
             <ul class="selectedProducts">
-                <li>
-                    <img src="./assets/burguer.svg" alt="Descrição do Item">
-                    <p>Hamburguer</p>
-                    <p class="price">R$ 27,99</p>
-                    <button>-</button>
-                </li>
-                <li>
-                    <img src="./assets/burguer-duplo.svg" alt="Descrição do Item">
-                    <p>Hamburguer duplo</p>
-                    <p class="price">R$ 39,99</p>
-                    <button>-</button>
-                </li>
                 <ul class="totalProducts">
-                    <li>
-                        <p>Quantidade de Itens:</p> <p class="totalItems">2</p>
-                    </li>
-                    <li>
-                        <p>Total: </p> <p class="totalPrice">R$ 00,00</p>
-                    </li>
-                    <button>Finalizar compra</button>
+                    <button class="buttonFinal">Finalizar compra</button>
                 </ul>
 
             </ul>
-
         </aside>
     </main>
 </body>

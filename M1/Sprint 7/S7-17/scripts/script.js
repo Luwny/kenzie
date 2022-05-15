@@ -91,8 +91,7 @@ function conteudo() {
             ul3.appendChild(li)
             }
             li.innerHTML = `
-                <img
-              src="${img}"
+                <img src="${img}"
               alt=""
               title=""
               class="product-img"
