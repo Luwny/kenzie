@@ -138,6 +138,9 @@ main>ul>li>button:hover {
     color: white;
 }
 main>aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
     top: 10vh;
     margin: 0 auto;
@@ -151,11 +154,13 @@ main>aside>h1 {
     text-align: center;
 }
 main>aside>.selectedProducts {
+    overflow-y: auto;
     width: 100%;
     height: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-content: flex-start;
 }
 main>aside>.selectedProducts>li {
     width: 45%;
@@ -208,22 +213,23 @@ main>aside>.selectedProducts>.totalProducts {
     align-items: center;
     flex-direction: column;
 }
-main>aside>.selectedProducts>.totalProducts>li {
+main>aside>.totalProducts>li {
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     position: relative;
     margin-top: 10px;
 }
-main>aside>.selectedProducts>.totalProducts>button {
-    position: relative;
-    top: 1vh;
-    width: 30%;
-    height: 30%;
+main>aside>button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 50%;
+    margin-bottom: 20px;
     border-radius: 10px;
     color: white;
     background-color: rgb(0, 0, 0);
     cursor: pointer;    
 }
-main>aside>.selectedProducts>.totalProducts>button:hover {
+main>aside>button:hover {
     background-color: rgb(90, 209, 164);
 }

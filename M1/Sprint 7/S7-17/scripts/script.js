@@ -3,12 +3,12 @@ const body = document.querySelector('body')
 //Criação da NAV e atribuição ao BODY
 const nav = document.createElement('nav')
 nav.innerHTML = `<nav>
-<img
-  src="./img/brand/logo.svg"
-  alt="Imagem da logotipo do Virtual Market de cor preta"
-  title="Imagem da logotipo do Virtual Market de cor preta"
-/>
-</nav>`
+                <img
+                src="./img/brand/logo.svg"
+                alt="Imagem da logotipo do Virtual Market de cor preta"
+                title="Imagem da logotipo do Virtual Market de cor preta"
+                />
+                </nav>`
 body.appendChild(nav)
 //Criando MAIN classe CONTAINER e atribuindo ao body
 const mainContainer = document.createElement('main')
