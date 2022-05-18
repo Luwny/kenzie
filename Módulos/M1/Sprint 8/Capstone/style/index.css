@@ -31,7 +31,7 @@ nav>.campoPesquisa {
     justify-content:space-around;
 }
 nav>.campoPesquisa>input {
-    width: 70%;
+    width: 80%;
     height: 3em;
     border-radius: 10px;
     text-align: center;
@@ -136,6 +136,9 @@ main>ul>li>button{
 main>ul>li>button:hover {
     background-color: rgb(90, 209, 164);
     color: white;
+}
+main>.display {
+    display: none;
 }
 main>aside {
     display: flex;

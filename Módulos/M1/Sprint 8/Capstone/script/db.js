@@ -12,7 +12,7 @@ const products = [ {
     price: 27.99,
     description: 'Delíciosa pizza assada no forno com apenas um sabor preparada com a deliciosa combinação de ingredientes escohlida pelo cliente.',
     img: "./assets/pizza.svg",
-    category: '',
+    category: 'pizza',
 },
 {
     id: 2,
@@ -20,7 +20,7 @@ const products = [ {
     price: 7.99,
     description: 'Sorvete super cremoso feito com os melhores ingredientes da região',
     img: "./assets/icecreamsimples.svg",
-    category: '',
+    category: 'frio',
 },
 {
     id: 3,
@@ -28,7 +28,7 @@ const products = [ {
     price: 37.99,
     description: 'Delíciosa pizza assada no forno com 2 sabores a escolha do cliente preparada com a deliciosa combinação de ingredientes escohlida pelo cliente.',
     img: "./assets/pizza-6.svg",
-    category: '',
+    category: 'pizza',
 },
 {
     id: 4,
@@ -36,7 +36,7 @@ const products = [ {
     price: 27.99,
     description: 'Deliciosidade em dose dupla, esse aqui com certeza é de encher o bucho!',
     img: "./assets/burguer-duplo.svg",
-    category: '',
+    category: 'hamburguer',
 },
 {
     id: 5,
@@ -44,7 +44,7 @@ const products = [ {
     price: 14.99,
     description: 'Método de infusão que não utiliza água quente para extrair as características do café. É uma bebida gelada com sabor refrescante e leve',
     img: "./assets/coffefrio.svg",
-    category: '',
+    category: 'frio',
 },
 {
     id: 6,
@@ -52,7 +52,7 @@ const products = [ {
     price: 15.99,
     description: 'Já sabe né? sorvete do melhor, com o melhor milkshake da região.',
     img: "./assets/icecreamavancado.svg",
-    category: '',
+    category: 'frio',
 },
 {
     id: 7,
@@ -60,5 +60,5 @@ const products = [ {
     price: 9.99,
     description: 'Delicioso milkshake batido no liquidificador.',
     img: "./assets/milkshake.svg",
-    category: '',
+    category: 'frio',
 }]
