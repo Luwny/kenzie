@@ -1,4 +1,4 @@
-# <h1 align="center">Kenzie Academy - Repositório de Atividades - Adam Neves</h1>
+# <h1 align="center">Repositório de Atividades - Adam Neves</h1>
 <div align="center">
 <img  width=200em src="https://veja.abril.com.br/wp-content/uploads/2019/12/1.jpg">
 </div>
