@@ -168,7 +168,7 @@ function carrinho() {
         const id = index
         element.listIndex = id;
         li.innerHTML = `   
-            <img src="${img}" alt="Descrição do Item">
+                    <img src="${img}" alt="Descrição do Item">
                     <p>${name}</p>
                     <p class="price">R$ ${price.toFixed(2).replace('.', ',')}</p>      
         `
@@ -183,7 +183,6 @@ function carrinho() {
         dltButton.addEventListener('click', event => {
             selected = selected.filter((item) => item.listIndex != event.target.id)
             refreshCarrinho()
-
         })
     })
 }
