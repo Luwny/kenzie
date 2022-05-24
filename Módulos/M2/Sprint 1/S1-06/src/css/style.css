@@ -1,0 +1,119 @@
+* {
+    font-family: Operator Mono;
+}
+
+/* CABEÇALHO */
+header > .filtersContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+}
+header > nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+    background-color: white;
+    box-shadow: 0px 4px 40px -5px rgba(0, 0, 0, 0.25);
+}
+header > nav > h1 {
+    font-size: 2em;
+    font-weight: bolder;
+    font-family: Operator Mono;
+}
+header > .filtersContainer > .estiloGeralBotoes{
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    font-size: 0.9rem;
+}
+
+header > .filtersContainer > .estiloGeralBotoes--mostrarTodos {
+    color: black;
+    background-color: #d3d3d3;
+}
+
+header > .filtersContainer > .estiloGeralBotoes--filtrarHortifruti {
+    background-color: tomato;
+    color: white;
+}
+
+header > .filtersContainer > .containerBuscaPorNome {
+    display: flex;
+    justify-content: space-between;
+}
+
+header > .filtersContainer > .containerBuscaPorNome > .campoBuscaPorNome {
+    border-radius: 5px 0 0 5px;
+    border: 1px solid black;
+    padding: 0 10px;
+}
+
+header > .filtersContainer > .containerBuscaPorNome > .estiloGeralBotoes--botaoBuscaPorNome {
+    background-color: rgb(17, 17, 20);
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+/* CONTEÚDO */
+
+main > .containerListaProdutos {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main > .containerListaProdutos > ul {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+main > .containerListaProdutos > ul > li {
+    color: black;
+    font-weight: bold;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: ease-in-out .1s;
+    width: 20%;
+}
+
+main > .containerListaProdutos > ul > li > hover {
+    box-shadow: 3px 3px 13px 1px rgb(146 146 146);
+}
+
+main > .containerListaProdutos > ul > li > img {
+    width: 100%;
+    max-width: 80px;
+}
+
+main > .containerListaProdutos > ul > li > h3 {
+    font-size: 1.5rem;
+}
+
+main > .containerListaProdutos > ul > li > p {
+    font-size: 1.5rem;
+}
+main > .containerListaProdutos > ul > li > span {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/* PREÇO TOTAL */
+.containerPrecoTotal{
+    text-align: center;
+}
+.containerPrecoTotal p{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.containerPrecoTotal p span{}

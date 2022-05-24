@@ -12,7 +12,7 @@ nav.innerHTML = `<nav>
     <input type="text" name="pesquisar" id="pesquisa" placeholder="Barra de pesquisa">
 </div>
 <ul>
-    <li> <a href="#"class="todos">Todos</a></li>
+    <li><a href="#"class="todos">Todos</a></li>
     <li><a href="#" class="burguer">Hamburguer</a></li>
     <li><a href="#" class="pizza">Pizzas</a></li>
     <li><a href="#" class="frio">Frios</a></li>

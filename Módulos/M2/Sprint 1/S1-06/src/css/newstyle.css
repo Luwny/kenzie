@@ -1,0 +1,132 @@
+* {
+    font-family: Operator Mono;
+    border: none;
+    transition: .5s;
+
+}
+button {
+    cursor: pointer;
+}
+input:focus {
+    outline: none
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+    box-shadow: 0px 4px 40px -5px rgba(0, 0, 0, 0.25);
+    font-family: Operator Mono;
+    font-size: 2em;
+    font-weight: bolder;
+}
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+main > .navBar {
+    display: flex;
+    flex-direction: row;
+    width: 67%;
+    justify-content: space-between;
+    margin-top: 4vh;
+}
+main > .navBar > .contentButton {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-around;
+}
+main > .navBar > .contentButton > button {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #F3FBF9;
+    color: #12B886;
+}
+main > .navBar > .contentButton > button:hover {
+    background-color: #12B886;
+    color: white;
+}
+main > .navBar > .contentSearchBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+main > .navBar > .contentSearchBar > input {
+    margin-right: 5%;
+    padding: 8px;
+    background-color: #F1F3F5;
+    border-radius: 10px;
+}
+main > .navBar > .contentSearchBar > input::placeholder {
+    font-weight: lighter;
+}
+main > .navBar > .contentSearchBar > input:focus {
+    outline: none;
+}
+main > .navBar > .contentSearchBar > button {
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    padding: 8px;
+    background-color: #12B886;
+    color: white;
+}
+main > .totalSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 68.5%;
+    height: 5vh;
+    margin-top: 4vh;
+    border-radius: 15px;
+    box-shadow: 0px 4px 40px -5px rgba(0, 0, 0, 0.25);
+}
+
+main > .totalSection > p {
+    font-size: 0.7em;
+    font-weight: lighter;
+    margin-left: 2%;
+}
+main > .totalSection > p > i {
+    color: #12B886;
+    font-size: 1.3em;
+}
+main > .totalSection > span {
+    font-size: 0.7em;
+    font-weight: lighter;
+    background-color: black;
+    color: white;
+    padding: 7px;
+    border-radius: 4px;
+    margin-right: 2%;
+}
+main > .contentCard {
+    margin-top: 5vh;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+main > .contentCard > .box {
+    margin-bottom: 5vh;
+}
+main > .contentCard > .box > .productName {
+    margin-top: 5%;
+}
+main > .contentCard > .box > .productCategory {
+    margin-top: 5%;
+    color: #868E96;
+    font-weight: lighter;
+    font-size: 0.7em;
+}
+main > .contentCard > .box > .productPrice {
+    margin-top: 5%;
+    font-weight: lighter;
+    font-size: 0.7em;
+}
