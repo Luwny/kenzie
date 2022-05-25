@@ -1,119 +1,132 @@
 * {
     font-family: Operator Mono;
+    border: none;
+    transition: .5s;
+
+}
+button {
+    cursor: pointer;
+}
+input:focus {
+    outline: none
 }
 
-/* CABEÇALHO */
-header > .filtersContainer {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 30px;
-}
-header > nav {
+
+header {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 5vh;
-    background-color: white;
     box-shadow: 0px 4px 40px -5px rgba(0, 0, 0, 0.25);
-}
-header > nav > h1 {
+    font-family: Operator Mono;
     font-size: 2em;
     font-weight: bolder;
-    font-family: Operator Mono;
 }
-header > .filtersContainer > .estiloGeralBotoes{
-    border: none;
-    font-weight: bold;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    display: block;
-    font-size: 0.9rem;
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
-
-header > .filtersContainer > .estiloGeralBotoes--mostrarTodos {
-    color: black;
-    background-color: #d3d3d3;
+main > .navBar {
+    display: flex;
+    flex-direction: row;
+    width: 67%;
+    justify-content: space-between;
+    margin-top: 4vh;
 }
-
-header > .filtersContainer > .estiloGeralBotoes--filtrarHortifruti {
-    background-color: tomato;
+main > .navBar > .contentButton {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-around;
+}
+main > .navBar > .contentButton > button {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #F3FBF9;
+    color: #12B886;
+}
+main > .navBar > .contentButton > button:hover {
+    background-color: #12B886;
     color: white;
 }
-
-header > .filtersContainer > .containerBuscaPorNome {
+main > .navBar > .contentSearchBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+main > .navBar > .contentSearchBar > input {
+    margin-right: 5%;
+    padding: 8px;
+    background-color: #F1F3F5;
+    border-radius: 10px;
+}
+main > .navBar > .contentSearchBar > input::placeholder {
+    font-weight: lighter;
+}
+main > .navBar > .contentSearchBar > input:focus {
+    outline: none;
+}
+main > .navBar > .contentSearchBar > button {
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    padding: 8px;
+    background-color: #12B886;
+    color: white;
+}
+main > .totalSection {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 68.5%;
+    height: 5vh;
+    margin-top: 4vh;
+    border-radius: 15px;
+    box-shadow: 0px 4px 40px -5px rgba(0, 0, 0, 0.25);
 }
 
-header > .filtersContainer > .containerBuscaPorNome > .campoBuscaPorNome {
-    border-radius: 5px 0 0 5px;
-    border: 1px solid black;
-    padding: 0 10px;
+main > .totalSection > p {
+    font-size: 0.7em;
+    font-weight: lighter;
+    margin-left: 2%;
 }
-
-header > .filtersContainer > .containerBuscaPorNome > .estiloGeralBotoes--botaoBuscaPorNome {
-    background-color: rgb(17, 17, 20);
+main > .totalSection > p > i {
+    color: #12B886;
+    font-size: 1.3em;
+}
+main > .totalSection > span {
+    font-size: 0.7em;
+    font-weight: lighter;
+    background-color: black;
     color: white;
-    border-radius: 0 5px 5px 0;
+    padding: 7px;
+    border-radius: 4px;
+    margin-right: 2%;
 }
-
-/* CONTEÚDO */
-
-main > .containerListaProdutos {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-main > .containerListaProdutos > ul {
-    list-style: none;
-    text-align: center;
+main > .contentCard {
+    margin-top: 5vh;
+    width: 70%;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
-
-main > .containerListaProdutos > ul > li {
-    color: black;
-    font-weight: bold;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 5px;
-    transition: ease-in-out .1s;
-    width: 20%;
+main > .contentCard > .box {
+    margin-bottom: 5vh;
 }
-
-main > .containerListaProdutos > ul > li > hover {
-    box-shadow: 3px 3px 13px 1px rgb(146 146 146);
+main > .contentCard > .box > .productName {
+    margin-top: 5%;
 }
-
-main > .containerListaProdutos > ul > li > img {
-    width: 100%;
-    max-width: 80px;
+main > .contentCard > .box > .productCategory {
+    margin-top: 5%;
+    color: #868E96;
+    font-weight: lighter;
+    font-size: 0.7em;
 }
-
-main > .containerListaProdutos > ul > li > h3 {
-    font-size: 1.5rem;
+main > .contentCard > .box > .productPrice {
+    margin-top: 5%;
+    font-weight: lighter;
+    font-size: 0.7em;
 }
-
-main > .containerListaProdutos > ul > li > p {
-    font-size: 1.5rem;
-}
-main > .containerListaProdutos > ul > li > span {
-    font-size: 0.8rem;
-    font-weight: 500;
-    margin-top: 10px;
-    display: inline-block;
-}
-
-/* PREÇO TOTAL */
-.containerPrecoTotal{
-    text-align: center;
-}
-.containerPrecoTotal p{
-    font-size: 1.4rem;
-    font-weight: 600;
-}
-.containerPrecoTotal p span{}

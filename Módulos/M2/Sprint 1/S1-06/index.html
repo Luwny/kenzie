@@ -1,59 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Produtos</title>
+    <title>S1-06 Shop Now V2</title>
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
-    <script defer src="src/js/dataProdutos.js"></script>
-    <script defer src="src/js/script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="./src/js/dataProdutos.js"></script>
+    <script defer src="./src/js/script.js"></script>
 </head>
-<body>
 
-    <!-- CABEÇALHO -->
+<body>
     <header>
         <nav>
-            <h1>Shop Now</h1>
+            <h1>Shop Now V2</h1>
         </nav>
-        <div id="filters" class="filtersContainer">
-            
-            <button class="estiloGeralBotoes estiloGeralBotoes--mostrarTodos">Mostrar Todos</button>
-            <button class="estiloGeralBotoes estiloGeralBotoes--filtrarHortifruti">Mostrar Hortifruti</button>
-
-            <div class="containerBuscaPorNome">
-                
-                <input type="text" placeholder="Nome do produto" class="campoBuscaPorNome">
-                <button class="estiloGeralBotoes estiloGeralBotoes--botaoBuscaPorNome">Buscar</button>
+    </header>
+    <main>
+        <nav class="navBar">
+            <div class="contentButton">
+                <button>
+                    Todos Produtos
+                </button>
+                <button>
+                    Hortifruit
+                </button>
+                <button>
+                    Panificadora
+                </button>
+                <button>
+                    Laticínios
+                </button>
 
             </div>
-        </div>
-    </header>
-    
-    <main>
-        <div class="containerListaProdutos" id="listProdutos">
-            <ul>
-            <!-- Utilize esse item html como template para a construção da lista de produtos -->
+            <!-- <div class="contentSearchBar">
+                <input type="text" placeholder="Pesquisar por">
+                <button type="submit"><img src="./src/img/search.png" alt=""></button>
+            </div> -->
+        </nav>
+        <section class="totalSection">
+            <!-- <p><i class="fa fa-spinner" aria-hidden="true"></i> Valor total dos produtos da sessão selecionada</p>
+            <span>R$ 00,00</span> -->
+        </section>
+        <div class="contentCard">
+            <div class="box">
+                <img src="./src/img/morango.png" alt="">
+                <p class="productName">Morango 5kg</p>
+                <p class="productCategory">Hortifruit<p>
+                <p class="productPrice">R$ 7,00</p>
 
-            <!-- Você pode remover esses comentários depois que fizer a construção pelo DOM -->
+            </div><div class="box">
+                <img src="./src/img/banana.png" alt="">
+                <p class="productName">Morango 5kg</p>
+                <p class="productCategory">Hortifruit<p>
+                <p class="productPrice">R$ 7,00</p>
 
+            </div><div class="box">
+                <img src="./src/img/bolo.png" alt="">
+                <p class="productName">Morango 5kg</p>
+                <p class="productCategory">Hortifruit<p>
+                <p class="productPrice">R$ 7,00</p>
 
-                <li>
-                    <img src="./src/img/maca.png" alt="Imagem maçã">
-                    <h3>Maçã</h3>
-                    <p>R$02.00</p>
-                    <span>Seção - Hortifruti</span>
-                </li>
+            </div><div class="box">
+                <img src="./src/img/leite.png" alt="">
+                <p class="productName">Morango 5kg</p>
+                <p class="productCategory">Hortifruit<p>
+                <p class="productPrice">R$ 7,00</p>
 
-            </ul>
-        </div>
+            </div><div class="box">
+                <img src="./src/img/maca.png" alt="">
+                <p class="productName">Morango 5kg</p>
+                <p class="productCategory">Hortifruit<p>
+                <p class="productPrice">R$ 7,00</p>
 
-        <div class="containerPrecoTotal">
-            <p>Valor total dos produtos da sessão selecionada: R$<span id="precoTotal">00.00</span></p>
-        </div>
+            </div><div class="box">
+                <img src="./src/img/pao.png" alt="">
+                <p class="productName">Morango 5kg</p>
+                <p class="productCategory">Hortifruit<p>
+                <p class="productPrice">R$ 7,00</p>
+
+            </div><div class="box">
+                <img src="./src/img/torta.png" alt="">
+                <p class="productName">Morango 5kg</p>
+                <p class="productCategory">Hortifruit<p>
+                <p class="productPrice">R$ 7,00</p>
+
+            </div>
+            <div class="box">
+                <img src="./src/img/yorgut.png" alt="">
+                <p class="productName">Morango 5kg</p>
+                <p class="productCategory">Hortifruit<p>
+                <p class="productPrice">R$ 7,00</p>
+
+            </div>
     </main>
-
-
 </body>
+
 </html>
