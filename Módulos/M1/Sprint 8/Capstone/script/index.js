@@ -26,9 +26,10 @@ header.appendChild(nav)
 
 const btnPesquisa = nav.querySelector('.btnPesquisa')
 
-const inputPesquisa = document.getElementById('pesquisa')
+
 
 //Barra de pesquisa
+const inputPesquisa = document.getElementById('pesquisa')
 inputPesquisa.addEventListener('keyup', event => {
     const inputPesquisa = document.getElementById('pesquisa').value.toLowerCase().trim()
     const filtroPesquisa = products.filter(element => {
