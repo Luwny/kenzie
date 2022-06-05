@@ -1,11 +1,11 @@
 //Selecionando body, main e header, e colocando como filha do body.
-const body = document.querySelector('body')
+const body   = document.querySelector('body')
 const header = document.querySelector('header')
-const main = document.querySelector('main')
+const main   = document.querySelector('main')
 body.append(header, main)
 
 //Criando NAV estática via innerHTML
-const nav = document.createElement('nav')
+const nav     = document.createElement('nav')
 nav.innerHTML = `<nav>
 <h1>Snows Market</h1>
 <div class="campoPesquisa">
@@ -18,10 +18,10 @@ nav.innerHTML = `<nav>
     <li><a href="#" class="frio">Frios</a></li>
 </ul>
 </nav>`
-const todosBtn = nav.querySelector('.todos')
-const burguerBtn = nav.querySelector('.burguer')
-const pizzaBtn = nav.querySelector('.pizza')
-const friosBtn = nav.querySelector('.frio')
+const todosBtn    = nav.querySelector('.todos')
+const burguerBtn  = nav.querySelector('.burguer')
+const pizzaBtn    = nav.querySelector('.pizza')
+const friosBtn    = nav.querySelector('.frio')
 header.appendChild(nav)
 
 const btnPesquisa = nav.querySelector('.btnPesquisa')
@@ -29,9 +29,9 @@ const btnPesquisa = nav.querySelector('.btnPesquisa')
 
 
 //Barra de pesquisa
-const inputPesquisa = document.getElementById('pesquisa')
+const inputPesquisa      = document.getElementById('pesquisa')
 inputPesquisa.addEventListener('keyup', event => {
-    const inputPesquisa = document.getElementById('pesquisa').value.toLowerCase().trim()
+    const inputPesquisa  = document.getElementById('pesquisa').value.toLowerCase().trim()
     const filtroPesquisa = products.filter(element => {
         return element.title.toLowerCase().includes(inputPesquisa)
      })
@@ -59,7 +59,7 @@ burguerBtn.addEventListener('click', event => {
 //Botão filtro pizzas
 pizzaBtn.addEventListener('click', event => {
     event.preventDefault
-    const filtroPizza = products.filter(element => {
+    const filtroPizza   = products.filter(element => {
        return element.category.includes('pizza')
     })
     exibirProdutos(filtroPizza)
@@ -68,14 +68,14 @@ pizzaBtn.addEventListener('click', event => {
 //Botão filtro frios
 friosBtn.addEventListener('click', event => {
     event.preventDefault
-    const filtroFrios = products.filter(element => {
+    const filtroFrios  = products.filter(element => {
        return element.category.includes('frio')
     })
     exibirProdutos(filtroFrios)
 })
 
 //Seleção da UL vitrine, estática / aside carrinho de compras
-const ulVitrine = document.querySelector('.vitrine')
+const ulVitrine     = document.querySelector('.vitrine')
 const asideCarrinho = document.querySelector('.carrinho')
 asideCarrinho.classList.add('display')
 main.append(ulVitrine, asideCarrinho)
@@ -92,17 +92,17 @@ function decrementar() {
 
 //Função pra exibir os itens na seção de produtos
 function exibirProdutos(database=products) {
-    ulVitrine.innerHTML = ""
+    ulVitrine.innerHTML   = ""
     database.forEach((element) => {
-        const li = document.createElement('li')
-        const name = element.title
-        const price = element.price
+        const li          = document.createElement('li')
+        const name        = element.title
+        const price       = element.price
         const description = element.description
-        const category = element.category
-        let img = element.img
-        const id = element.id
+        const category    = element.category
+        let img           = element.img
+        const id          = element.id
         ulVitrine.appendChild(li)
-        li.innerHTML =
+        li.innerHTML      =
             `
                 <img src="${img}" alt="Descrição do Item">
                 <p class="productName">${name}</p>
@@ -111,9 +111,9 @@ function exibirProdutos(database=products) {
                 `
 
         //Criando botão de add ao carrinho
-        const addButton = document.createElement('button')
+        const addButton     = document.createElement('button')
         addButton.classList.add('addButton')
-        addButton.id = element.id
+        addButton.id        = element.id
         addButton.innerText = '+'
         li.appendChild(addButton)
         const elementButton = document.getElementById(element.id)
@@ -133,15 +133,15 @@ function exibirCarrinho() {
 
 //Função pra clicar no botão e add produto
 function addEventListener(elementButton) {
-    elementButton.addEventListener('click', element => {
-        const retorno = products.find(function(product) {
+    elementButton.addEventListener('click', element => {        
+        const retorno      = products.find(function(product) {
             if (product.id == element.target.id) {
                 return true
             }
         })
 
-        let novoRetorno = {...retorno }
-        selected.push(novoRetorno)
+        
+        selected.push({...retorno})
         refreshCarrinho()
     })
 }
@@ -154,7 +154,7 @@ function refreshCarrinho() {
 }
 
 //Selecionar H1 e UL
-const h1Carrinho = document.querySelector('.h1Carrinho')
+const h1Carrinho         = document.querySelector('.h1Carrinho')
 const ulSelectedProducts = document.querySelector('.selectedProducts')
 asideCarrinho.append(h1Carrinho, ulSelectedProducts)
 
@@ -162,21 +162,21 @@ asideCarrinho.append(h1Carrinho, ulSelectedProducts)
 function carrinho() {
     ulSelectedProducts.innerHTML = ""
     selected.forEach((element, index) => {
-        const li = document.createElement('li')
-        const name = element.title
+        const li    = document.createElement('li')
+        const name  = element.title
         const price = element.price
-        let img = element.img
-        const id = index
-        element.listIndex = id;
+        let img     = element.img
+        const id    = index
+        element.listIndex = id
         li.innerHTML = `   
                     <img src="${img}" alt="Descrição do Item">
                     <p>${name}</p>
                     <p class="price">R$ ${price.toFixed(2).replace('.', ',')}</p>      
         `
-        const dltButton = document.createElement('button')
+        const dltButton     = document.createElement('button')
         dltButton.innerText = "-"
-        dltButton.id = id
-        li.id = `itemcarrinho-${id}`
+        dltButton.id        = id
+        li.id               = `itemcarrinho-${id}`
         li.appendChild(dltButton)
         ulSelectedProducts.appendChild(li)
 
@@ -196,14 +196,14 @@ asideCarrinho.appendChild(ulTotalProducts)
 //Função para somar valor e quantidade do carrinho
 function carrinhoTotal() {
     ulTotalProducts.innerHTML = ""
-    let sum = 0
+    let sum     = 0
     let counter = 0
-    const li = document.createElement('li')
-    const li2 = document.createElement('li')
+    const li    = document.createElement('li')
+    const li2   = document.createElement('li')
     selected.forEach(element => {
-        sum += element.price
+        sum     += element.price
         counter++
-        li.id = element.id
+        li.id   = element.id
         li.innerHTML = `
         Quantidade de produtos: ${counter}
         `
