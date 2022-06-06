@@ -1,0 +1,39 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+a {
+    color: white;
+    cursor: pointer;
+}
+body {
+    height: 100vh;
+    width: 100vh;
+    background-color: black;
+}
+body > #header {
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    background-color: white;
+    height: 5vh;
+}
+body > #header > div {
+    background-color: gray;
+    padding: 10px;
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+body > #header > div > a:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+body > #header > div > a {
+    border-radius: 10px;
+    background-color: blue;
+    padding: 5px;
+}
