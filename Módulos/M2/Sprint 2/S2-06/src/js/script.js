@@ -59,14 +59,17 @@ buttonPani.addEventListener('click', () => {
 
 //Coletando input.value e pesquisando
 const input = document.querySelector('.input')
-input.addEventListener('keyup', () => {    
+input.addEventListener('keyup', () => {
+     
     const input = document.querySelector('.input').value.toLowerCase().trim()
+    console.log(input)   
     const filtro = produtos.filter(element => {
         return element.categoria.toLowerCase().includes(input) || element.secao.toLowerCase().includes(input) || element.nome.toLowerCase().includes(input)
     })
     mostrarProdutos(filtro)
     filtrarPreço(filtro)
 })
+
 
 
 
@@ -223,7 +226,7 @@ function carrinhoCheio() {
     const pQtd = document.createElement('p')
     pQtd.innerText = 'Quantidade'
     const pQtdNum = document.createElement('p')
-    pQtdNum.innerText = qtd
+    pQtdNum.innerText = selected.length
     qtdCarrinho.append(pQtd, pQtdNum)
     const totalCarrinho = document.createElement('div')
     const pTotal = document.createElement('p')
@@ -245,10 +248,3 @@ function verificaCard() {
          carrinhoVazio()
     }
 } verificaCard()
-
-produtos.forEach(element => {
-    for(let i = 0; i < element.componentes.length; i++) {
-        //criar componentes
-        //componentes.innerText = element.componentes[i]
-    }
-})
