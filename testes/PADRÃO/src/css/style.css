@@ -1,0 +1,15 @@
+.bloco1 {
+    background-color: green;
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bloco1 > p {
+    width: 120px;
+    height: 20px;
+    background-color: red;
+    margin: 5px;
+    text-align: center;
+}

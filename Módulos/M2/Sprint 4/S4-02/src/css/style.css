@@ -1,0 +1,506 @@
+/* este estilo aplica-se a partir de 0px até 900px */
+@media ( max-width:900px ) {
+* {
+    font-size: 0.8em;
+    font-family: Operator Mono;
+    border: none;
+    transition: .2s;
+}
+.componentes {
+    display: none;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Operator Mono;
+    box-shadow: 0px 4px 40px -5px rgba(0, 0, 0, 0.25);
+    height: 50px;
+    margin-bottom: 4%;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+main > .navBar > .contentButton {
+    height: 6vh;
+    width: 99vw;
+    overflow-x:auto;
+    display: flex;
+}
+main > .navBar > .contentButton > button {
+    font-size: 1em;
+    font-weight: lighter;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #F3FBF9;
+    color: #12B886;
+    margin-right: 5px;
+}
+main > .navBar > .contentButton > button:hover {
+    background-color: #12B886;
+    color: white;
+}
+main > .navBar > .contentSearchBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main > .navBar > .contentSearchBar > .input {
+    width: 92%;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 4%;
+    margin-bottom: 2%;
+    background-color: #F1F3F5;
+    font-weight: lighter;
+    font-size: 1rem;
+}
+main > .navBar > .contentSearchBar > .input::-webkit-input-placeholder {
+    text-align: center;
+}
+main > .navBar > .contentSearchBar > input:focus {
+    outline: none;
+}
+main > .navBar > .contentSearchBar > input:focus::-webkit-input-placeholder {
+    color: transparent;
+    transition: 0.5s;
+}
+
+main > .totalSection {
+    display: none;
+}
+main > .contentCard {
+    display: flex;
+    width: 100%;
+    overflow-x:auto;
+    margin-bottom: 5vh;
+}
+main > .contentCard > .box {
+    margin-right: 4%;
+    margin-left: 4%;
+    width: 274px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+main > .contentCard > .box > p {
+    margin-top: 4%;
+}
+main > .contentCard > .box > .productCategory {
+    color: #868E96;
+}
+main > .contentCard > .box > .divPreco > .productPrice {
+    font-weight: lighter;
+}
+main > .contentCard > .box > .divPreco {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+main > .contentCard > .box > .divPreco> button {
+    padding: 10px;
+    margin-top: 1%;
+    border-radius: 15px;
+    color: #12B886;
+    background-color: #F3FBF9;
+    cursor: pointer;
+    border: 1px transparent solid;
+}
+main > .contentCard > .box > .divPreco> button:hover {
+    background-color: #12B886;
+    color: white;
+}
+ main > .carrinhoContent > .divVazio {
+     height: 100%;
+     width: 100%;
+     display: flex;
+     font-size: 2rem;
+     font-weight: lighter;
+     text-align: center;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+ main > .carrinhoContent {
+     background-color: white;
+     width: 92%;
+     height: 36vh;
+ }
+ 
+ main > .carrinhoContent > .boxCarrinho {
+     justify-content: space-around;
+     align-items: center;
+ }
+ main > .carrinhoContent > .headCarrinho {
+     background-color: #12B886;
+     display: flex;
+     align-items: center;
+     width: 100%;
+     height: 5vh;
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+ }
+ main > .carrinhoContent > .headCarrinho > .tituloCarrinho {
+     margin-left: 3%;
+     font-size: 1.5em;
+     color: white;
+ }
+ main > .carrinhoContent >.boxCarrinho {
+     flex-wrap: wrap;
+     display: flex;
+     margin-top: 2vh;
+ }
+ main > .carrinhoContent > .contentCarrinho {
+    overflow-y: auto;
+    height: 22vh;
+}
+main > .carrinhoContent > .contentCarrinho >.boxCarrinho > i {
+    margin-left: auto;
+}
+
+ main > .carrinhoContent > .contentCarrinho >.boxCarrinho > i > .fa-trash-o {
+     font-size: 1.8em;
+     cursor: pointer;
+     
+ }
+ main > .carrinhoContent > .contentCarrinho > .boxCarrinho {
+     margin-top: 5%;
+     display:flex;
+     align-items: center;
+ }
+ main > .carrinhoContent > .contentCarrinho > .boxCarrinho > .divInfos > p {
+    margin-top: 5%;
+    margin-bottom: 5%;
+ }
+ main > .carrinhoContent > .contentCarrinho > .boxCarrinho > .divInfos > .pQtd {
+     font-weight: lighter;
+ }
+ main > .carrinhoContent > .contentCarrinho > .boxCarrinho > .divInfos > .pName {
+     font-size: 1.5em;
+ }
+ main > .carrinhoContent > .contentCarrinho > .boxCarrinho > .divInfos > .pCategory {
+    color: #868E96;
+    font-weight: lighter;
+ }
+ main > .carrinhoContent > .contentCarrinho > .boxCarrinho > .divInfos > .pPrice {
+     font-weight: lighter;
+ }
+ main > .carrinhoContent > .contentCarrinho > .boxCarrinho > img {
+     margin-right: 5%;
+     width: 70px;
+     height: 70px;
+     border-radius: 10px;
+ }
+ main > .carrinhoContent > .qtdCarrinho {
+     width: 100%;
+     background-color: #F8F9FA;
+     padding: 10px;
+     display: flex;
+     justify-content: space-between;
+     margin-top: 5%;
+     margin-bottom: 1%;
+ }
+ main > .carrinhoContent > .totalCarrinho {
+    width: 100%;
+    padding: 10px;
+    font-weight: lighter;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #12B886;
+ }
+}
+/* este estilo aplica-se a partir de 900px em diante */
+@media ( min-width:900px ) {
+    .pExemplar {
+        width: 200px;
+        
+        color: gray;
+    }
+    * {
+        font-size: 1rem;
+        font-family: Operator Mono;
+        border: none;
+        transition: .2s;
+    }
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 5vh;
+        box-shadow: 0px 4px 40px -5px rgba(0, 0, 0, 0.25);
+        font-family: Operator Mono;
+        font-size: 3vh;
+        font-weight: bolder;
+    }
+    main {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    main > .navBar {
+        display: flex;
+        flex-direction: row;
+        width: 85vw;
+        justify-content: space-between;
+        margin-top: 4vh;
+    }
+    main > .navBar > .contentButton {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        justify-content: space-around;
+    }
+    main > .navBar > .contentButton > button {
+        padding: 15px;
+        border-radius: 10px;
+        background-color: #F3FBF9;
+        color: #12B886;
+    }
+    main > .navBar > .contentButton > button:hover {
+        background-color: #12B886;
+        color: white;
+    }
+    main > .navBar > .contentSearchBar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    main > .navBar > .contentSearchBar > input {
+        margin-right: 5%;
+        padding: 8px;
+        background-color: #F1F3F5;
+        border-radius: 10px;
+        font-weight: lighter;
+    }
+    main > .navBar > .contentSearchBar > input::placeholder {
+        font-weight: lighter;
+    }
+    main > .navBar > .contentSearchBar > input:focus {
+        outline: none;
+    }
+    main > .navBar > .contentSearchBar > input:focus:focus::-webkit-input-placeholder {
+        color: transparent;
+        transition: 0.5s;
+    }
+    main > .navBar > .contentSearchBar > button {
+        display: flex;
+        border-radius: 5px;
+        align-items: center;
+        padding: 8px;
+        background-color: #12B886;
+        color: white;
+    }
+    main > .totalSection {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 85vw;
+        height: 5vh;
+        margin-top: 4vh;
+        border-radius: 15px;
+        box-shadow: 0px 4px 40px -5px rgba(0, 0, 0, 0.25);
+        display: none;
+    }
+    
+    main > .totalSection > p {
+        font-size: 0.8em;
+        font-weight: lighter;
+        margin-left: 2%;
+    }
+    main > .totalSection > p > i {
+        color: #12B886;
+        font-size: 1.3em;
+        animation: loading 1s linear infinite;
+    }
+    main > .totalSection > span {
+        font-size: 0.7em;
+        font-weight: lighter;
+        background-color: black;
+        color: white;
+        padding: 7px;
+        border-radius: 4px;
+        margin-right: 2%;
+    }
+    main > .contentCard {
+        margin-top: 5vh;
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    main > .contentCard > .box {
+        margin-bottom: 5vh;
+        border-radius: 10px;
+    }
+    main > .contentCard > .box > .productName {
+        margin-top: 5%;
+    }
+    main > .contentCard > .box > .productCategory {
+        margin-top: 5%;
+        color: #868E96;
+        font-weight: lighter;
+        font-size: 0.7em;
+        margin-bottom: 5%;
+    }
+    main > .contentCard > .box > .productPrice {
+        margin-top: 5%;
+        font-weight: lighter;
+        font-size: 0.8em;
+    }
+    main > .contentCard > .box > .componentes {
+        font-size: 0.8rem;
+        font-weight: lighter;
+        color: #868E96;
+    }
+    main > .contentCard > .box > .divPreco {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    main > .contentCard > .box > .divPreco> button {
+        padding: 10px;
+        margin-top: 1%;
+        border-radius: 15px;
+        color: #12B886;
+        background-color: #F3FBF9;
+        cursor: pointer;
+        border: 1px transparent solid;
+    }
+    main > .contentCard > .box > .divPreco> button:hover {
+        background-color: #12B886;
+        color: white;
+    }
+    main > .contentCard > .box > .divPreco > .productPrice {
+        font-weight: lighter;
+    }
+    
+    @keyframes loading {
+        0% {
+            transform: rotate(0);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    button {
+        cursor: pointer;
+    }
+
+   
+    main > .carrinhoContent {
+        background-color: white;
+        width: 15vw;
+        height: 50vh;
+        margin-top: 5vh;
+    }
+    main > .carrinhoContent > .divVazio {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        font-size: 2rem;
+        font-weight: lighter;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #868E96;
+    }
+    
+    main > .carrinhoContent > .boxCarrinho {
+        justify-content: space-around;
+        align-items: center;
+    }
+    main > .carrinhoContent > .headCarrinho {
+        background-color: #12B886;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 5vh;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    main > .carrinhoContent > .headCarrinho > .tituloCarrinho {
+        margin-left: 3%;
+        font-size: 1.3rem;
+        color: white;
+    }
+    main > .carrinhoContent >.boxCarrinho {
+        flex-wrap: wrap;
+        display: flex;
+        margin-top: 2vh;
+    }
+    
+    main > .carrinhoContent > .contentCarrinho {
+        overflow-y: auto;
+        height: 100%;
+       
+   }
+    main > .carrinhoContent > .contentCarrinho >.boxCarrinho > i > .fa-trash-o {
+        font-size: 1.2rem;
+        cursor: pointer;
+        color: #868E96;
+    }
+    main > .carrinhoContent > .contentCarrinho > .boxCarrinho {
+        margin-top: 5%;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    main > .carrinhoContent > .contentCarrinho > .boxCarrinho > .divInfos > p {
+       margin-top: 5%;
+       margin-bottom: 5%;
+    }
+    main > .carrinhoContent > .contentCarrinho > .boxCarrinho > .divInfos > .pQtd {
+        font-weight: lighter;
+    }
+    main > .carrinhoContent > .contentCarrinho > .boxCarrinho > .divInfos > .pName {
+        font-size: 1rem;
+    }
+    main > .carrinhoContent > .contentCarrinho > .boxCarrinho > .divInfos > .pCategory {
+       color: #868E96;
+       font-weight: lighter;
+       font-size: 0.8rem;
+    }
+    main > .carrinhoContent > .contentCarrinho > .boxCarrinho > .divInfos > .pPrice {
+        font-weight: lighter;
+        font-size: 0.8rem;
+    }
+    main > .carrinhoContent > .contentCarrinho > .boxCarrinho > img {
+        width: 50%;
+        height: 50%;
+        border-radius: 10px;
+    }
+    main > .carrinhoContent > .qtdCarrinho {
+        width: 100%;
+        background-color: #F8F9FA;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5%;
+        margin-bottom: 1%;
+    }
+    main > .carrinhoContent > .totalCarrinho {
+       width: 100%;
+       padding: 10px;
+       font-weight: lighter;
+       color: white;
+       display: flex;
+       justify-content: space-between;
+       border-bottom-left-radius: 10px;
+       border-bottom-right-radius: 10px;
+       background-color: #12B886;
+    }
+}
