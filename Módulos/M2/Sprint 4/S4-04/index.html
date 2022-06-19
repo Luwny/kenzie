@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+
+    <title>Lista de Produtos - Continuação</title>
+  </head>
+  <body>
+    <!-- CABEÇALHO -->
+    <header>
+      <div id="filters" class="filtersContainer">
+        <button class="estiloGeralBotoes estiloGeralBotoes--mostrarTodos">
+          Mostrar Todos
+        </button>
+        <button class="estiloGeralBotoes estiloGeralBotoes--filtrarHortifruti">
+          Mostrar Hortifruti
+        </button>
+
+        <div class="containerBuscaPorNome">
+          <input
+            type="text"
+            placeholder="Nome do produto"
+            class="campoBuscaPorNome"
+          />
+          <button
+            class="estiloGeralBotoes estiloGeralBotoes--botaoBuscaPorNome"
+          >
+            Buscar
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="containerListaProdutos" id="listProdutos">
+        <ul>
+          <!-- LISTA DE PRODUTOS -->
+        </ul>
+      </div>
+
+      <div id="carrinho" class="containerCarrinho">
+        <ul>
+          <!-- ITENS ADICIONADOS AO CARRINHO -->
+        </ul>
+
+        <div class="containerPrecoTotal">
+          <p>Preço total: R$<span id="precoTotal">00.00</span></p>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="./src/js/script.js"></script>
+  </body>
+</html>

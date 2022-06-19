@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S4-06 Métodos Reproduzidos</title>
+    <script defer src="./src/main.js"></script>
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script defer src="./src/metodos/main.js"></script>
+</head>
+
+<body>
+    <header> 
+        <h1>Kenzie Academy<br>
+        Métodos Reproduzidos by Adam</h1>
+    </header>
+    <div class="container">
+        <div class="boxes">
+            <h1>< Método newForEach > </M></h1>
+        <pre>
+function newForEach(array, callback) {
+    for (let i = 0; i < array.length; i++) {
+        callback(array[i], i, array)
+    }
+}      
+</pre>
+</div>
+<div class="boxes">
+        <h1>< Método newMap > </M></h1>
+    <pre>
+function newMap(array, callback) {
+    let newArray = []
+    for (let i = 0; i < array.length; i++) {
+        newArray.push([callback(array[i], i, array)])
+    }
+    return newArray
+}
+</pre>
+</div>
+<div class="boxes">
+        <h1>< Método newFilter > </M></h1>
+    <pre>
+function newFilter(array, callback){
+    let newArr = []
+    for (let i = 0; i < array.length; i++) {
+        if (callback(array[i], i, arr)) {
+            newArr.push(array[i])
+        }
+    }
+    return newArr
+}        
+    </pre>
+</div>
+<div class="boxes">
+    <h1>< Método newFind > </M></h1>
+<pre>
+function newFind (array, callback) {
+    for (let i = 0; i < array.length; i++) {
+        if (callback(array[i], i, array)) {
+            return array[i]
+        }        
+    }
+}      
+</pre>
+</div>
+<div class="boxes">
+    <h1>< Método newIndexOf > </M></h1>
+<pre>
+function newIndexOf(array, element) {
+    for (let i = 0; i < array.length; i++) {
+        if (arr[i] === element) {
+            return i
+        }
+    }
+}          
+</pre>
+</div>
+<div class="boxes">
+    <h1>< Método newIncludes > </M></h1>
+<pre>
+function newIncludes(array, element, i = 0) {
+    let teste
+
+    for (i ; i < array.length; i++) {
+        if (array[i] === element) {
+            teste = true
+        } else {
+            teste = false
+        }
+    }
+    return teste
+}             
+</pre>
+</div>
+<div class="boxes">
+    <h1>< Método newReduce > </M></h1>
+<pre>
+function newReduce(array, callback) {
+    let teste = 0
+    for (let i = 0; i < array.length; i++) {
+        teste = callback(teste, array[i], i, array)
+    }
+    return teste
+}               
+</pre>
+</div>
+<div class="boxes">
+    <h1>< Método newFindIndex > </M></h1>
+    <h1 class="extra">< Extra > </M></h1>
+<pre>
+function newFindIndex(array, callback) {
+    for (let i = 0; i < array.length; i++) {
+        if (callback(array[i], i, array) === array[i]) {
+            return array[i]
+        }        
+    }
+    return -1
+}               
+</pre>
+</div>
+<div class="boxes">
+    <h1>< Método newSome > </M></h1>
+    <h1 class="extra">< Extra > </M></h1>
+<pre>
+function newSome(array, callback) {
+    let teste 
+
+    for (let i = 0; i < array.length; i++) {
+        if (callback(array[i], i, array) === array[i]) {
+            teste = true
+        } else {
+            teste = false
+        }
+    }
+    return teste
+}               
+</pre>
+</div>
+<div class="boxes">
+    <h1>< Método newEvery > </M></h1>
+    <h1 class="extra">< Extra > </M></h1>
+<pre>
+function newEvery(array, callback) {
+    let newArr = []
+    let teste 
+    for (let i = 0; i < array.length; i++) {
+        if (callback(array[i], i, array) === array[i]) {
+            newArr.push(true)
+        }
+    }
+    if (array.length === newArr.length) {
+        return teste = true
+    }
+    
+    return teste
+}
+                 
+</pre>
+</div>
+<div class="boxes">
+    <h1>< Método newConcat > </M></h1>
+    <h1 class="extra">< Extra > </M></h1>
+<pre>
+function newConcat(array, ...all) {
+    return (...array, ...all)
+}                   
+</pre>
+</div>
+<div class="boxes">
+    <h1>< Método newJoin > </M></h1>
+    <h1 class="extra">< Extra > </M></h1>
+<pre>
+function newJoin(array, separator) {
+    let string = ''
+    
+    if (array.length == 0) {
+        return ''
+    }
+
+    for (let i = 0; i < array.length; i++) {
+        if (i < array.length - 1) {
+            string += array[i] + separator
+        } else {
+            string += arr[i]
+        }
+    } 
+    return string
+}                       
+</pre>
+</div>
+<div class="boxes">
+    <h1>< Método newSlice > </M></h1>
+    <h1 class="extra">< Extra > </M></h1>
+<pre>
+function newSlice(array, n = 0) {
+   let index
+    if (n < 0) {
+        index = array.length - Math.abs(n)
+    } else {
+        index = n
+    }
+
+    let newArr = []
+    for (let i = 0; i< array.length; i++) {
+        newArr.push(array[i])
+    }
+    return newArr
+}                            
+</pre>
+</div>
+<div class="boxes">
+    <h1>< Método newFlat > </M></h1>
+    <h1 class="extra">< Extra > </M></h1>
+<pre>
+function newFlat(array, depth = 1, newArr = []) {
+    if (depth == 0) {
+        return newArr
+    }
+    for (let i = 0; i < array.length; i++) {
+        if (typeof array[i] === 'object') {
+            if (depth == 1) {
+                newArr.push(...array[i])
+            } else {
+                newFlat(array[i], depth - 1, newArr)
+            }
+        } else {
+            newArr.push(array[i])
+        }
+    }
+    return newArr
+}                              
+</pre>
+</div>
+<div class="boxes">
+    <h1>< Método newFlatMap > </M></h1>
+    <h1 class="extra">< Extra > </M></h1>
+<pre>
+ function newFlatMap(array, depth = 1, callback) {
+    let newArr = []
+    for (let i = 0; i < array.length; i++) {
+        if (typeof array[i] === 'object') {
+            newArr.push([callback(array[i], i, array)], depth, newArr)
+        } else {
+            newArr.push(array[i])
+        }
+    }
+    return newArr
+}        
+</pre>
+</div>
+
+    </div>
+</body>
+
+</html>

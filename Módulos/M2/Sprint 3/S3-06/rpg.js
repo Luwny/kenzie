@@ -68,7 +68,6 @@ class Mage extends Villager {
         } 
     }
 }
-console.log('yuri gay')
 // Diminuir a vida do target de acordo com a variável dmg do mago
 // Verificar se o mago tem mana suficiente pra jogar a magia 
 // Diferente do normalAttack a magia nao tem seu dano reduzido pela defesa do adversario
