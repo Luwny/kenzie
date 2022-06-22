@@ -1,0 +1,65 @@
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .container .content {
+    width: 520px;
+    text-align: center;
+  }
+  .container .content h1 {
+    color: #0000ff;
+  }
+  .container .content .input-box {
+    margin-top: 10px;
+  }
+  .container .content .input-box input {
+    width: 60%;
+    height: 40px;
+    outline: none;
+    padding-left: 5px;
+  }
+  .container .content .input-box button {
+    width: 30%;
+    height: 40px;
+    cursor: pointer;
+    outline: none;
+    font-weight: 500;
+    background-color: #0000ff;
+    color: #fff;
+    border: none;
+  
+  }
+  .container .content .input-box button:hover {
+    background-color: #001e32;
+    transition: .5 all;
+  
+  }
+  .container .content .audio-box {
+    margin-top: 20px;
+  }
+  .container .content .audio-box h2 {
+    font-weight: 700;
+    margin: 10px;
+  }
+  .container .content .audio-box ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .container .content .audio-box ul li {
+    height: 28px;
+    margin: 5px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .container .content .audio-box ul li button {
+    width: 80px;
+  }
+  .container .content .audio-box audio {
+    width: 100%;
+    margin-top: 5px;
+  }
