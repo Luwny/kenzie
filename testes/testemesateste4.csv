@@ -1,6 +1,7 @@
-arr1;arr2;result;index;index < arr1.length;i++;arr1[index] - arr2[index];arr2[index] += arr1[index];return
-[5, 10, 15];"[""5"", ""11"", ""15""]";[];0;true;0 + 1;false;true;-
-length = 3;length = 3;[`5`, 5];1;true;1+1;false;true;-
--;-;[`5`, 5, `11`, 10];2;true;2+1;false;true;-
--;-;[`5`, 5, `11`, 10, `15`, 15];3;false;-;-;-;-
--;-;;;;;;;[`5`, 5, `11`, 10, `15`, 15]
+let i;i <= 25;dois;return;
+1;true;1;25;
+2;true;2;24;
+3;true;3;23;
+4;true;4;22;
+5;true;5;21;
+;;;;

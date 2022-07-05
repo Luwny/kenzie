@@ -1,0 +1,22 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+form {
+    
+    display: flex;
+    flex-direction:column;
+}
+input, button {
+    outline: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+button {
+    cursor: pointer;
+}

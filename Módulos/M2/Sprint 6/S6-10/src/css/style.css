@@ -1,0 +1,311 @@
+/* Desktop Size */
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+@media (min-width:950px) {
+    * {
+        font-family: 'Kdam Thmor Pro', sans-serif;
+        transition: 0.3s;
+    }
+
+    body {
+        background-color: #F9F9F9;
+    }
+
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    header {
+        background-color: #5163D3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 8vh;
+        width: 100%;
+    }
+
+    .mainCardNews {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        display: flex;
+        justify-content: right;
+        width: 70%;
+        background-color: white;
+        box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .mainCardNews>img {
+        width: 50%;
+        object-fit: cover;
+    }
+
+    .contentNews {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .mainCardNews>.contentNews>.main {
+        margin: 20px;
+    }
+
+    .contentNews>.type {
+        font-size: 0.7rem;
+        font-weight: bolder;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #D7E4FB;
+        color: #5163D3;
+        width: 30%;
+        height: 2.5vh;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .contentNews>.title {
+        font-size: 1.5rem;
+        color: #5163D3;
+        font-weight: bolder;
+    }
+
+    .contentNews>.description {
+        font-size: 0.rem;
+    }
+
+    .contentNews>.by {
+        font-size: 0.6rem;
+        color: #1B1C1E;
+    }
+
+    .otherNews {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .otherNews>.cardNews {
+        background-color: white;
+        width: 48%;
+        display: flex;
+        border-radius: 10px;
+        box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        margin: 10px;
+    }
+
+    .cardNews>.cardImg {
+        display: flex;
+    }
+
+    .cardNews>.cardImg>img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .cardNews>.cardInfo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cardInfo>.typeNews,
+    .titleNews,
+    .descriptionNews,
+    .byNews {
+        margin: 10px;
+    }
+
+    .cardInfo>.typeNews {
+        background-color: #D7E4FB;
+        color: #5163D3;
+        text-align: center;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .cardInfo>.titleNews {
+        color: #5163D3;
+        font-weight: bolder;
+        font-size: 0.8rem;
+    }
+
+    .cardInfo>.descriptionNews {
+        font-size: 0.7rem;
+    }
+
+    .cardInfo>.byNews {
+        font-weight: lighter;
+        font-size: 0.5rem;
+        color: gray;
+    }
+
+    footer {
+        margin-top: 4vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-weight: lighter;
+        background-color: #EEEEEE;
+        bottom: 0;
+        left: 0;
+        height: 50px;
+        width: 100%;
+    }
+}
+
+/* Mobile Size */
+@media (max-width:950px) {
+    * {
+        font-family: 'Kdam Thmor Pro', sans-serif;
+        transition: 0.3s;
+    }
+
+    body {
+        background-color: #F9F9F9;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    header {
+        background-color: #5163D3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 8vh;
+        width: 100%;
+    }
+
+    main>.mainCardNews {
+        margin-top: 3vh;
+        width: 100%;
+        margin-bottom: 1vh;
+    }
+
+    main>.mainCardNews>.contentNews {
+        position: absolute;
+        margin-top: 25%;
+    }
+
+    .mainCardNews>.contentNews>.type {
+        background-color: white;
+        width: 35%;
+        text-align: center;
+        color: #5163D3;
+        border-radius: 5px;
+        padding: 5px;
+        font-weight: bolder;
+    }
+
+    .mainCardNews>.contentNews>.title {
+        color: white;
+        font-size: 1.2rem;
+    }
+
+    .mainCardNews>.contentNews>.description {
+        display: none;
+    }
+
+    .mainCardNews>.contentNews>.by {
+        color: white;
+        font-size: 0.6rem;
+        font-weight: lighter;
+    }
+
+    main>.mainCardNews>.contentNews>.main {
+        margin: 10px;
+    }
+
+    main>.mainCardNews>img {
+        width: 100%;
+        box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    main>.otherNews {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .otherNews>.cardNews {
+        border-radius: 5px;
+        background-color: white;
+        margin: 10px;
+        box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.3);
+        width: 95%;
+    }
+
+    .otherNews>.cardNews>.cardInfo {
+        margin: 10px;
+    }
+
+    .otherNews>.cardNews>.cardInfo>.typeNews,
+    .titleNews,
+    .descriptionNews,
+    .byNews {
+        margin: 10px;
+    }
+
+    .otherNews>.cardNews>.cardInfo>.typeNews {
+        background-color: #D7E4FB;
+        font-size: 0.7rem;
+        color: #5163D3;
+        width: 35%;
+        text-align: center;
+        border-radius: 5px;
+        padding: 3px;
+    }
+
+    .otherNews>.cardNews>.cardInfo>.titleNews {
+        font-size: 0.9rem;
+        color: #5163D3;
+        font-weight: bolder;
+
+    }
+
+    .otherNews>.cardNews>.cardInfo>.descriptionNews {
+        font-size: 0.7rem;
+    }
+
+    .otherNews>.cardNews>.cardInfo>.byNews {
+        font-weight: lighter;
+        font-size: 0.5rem;
+    }
+
+    .cardNews>.cardImg {
+        display: none;
+    }
+
+    footer {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-weight: lighter;
+        background-color: #EEEEEE;
+        bottom: 0;
+        left: 0;
+        height: 50px;
+        width: 100%;
+    }
+
+}

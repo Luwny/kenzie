@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/style.css">
+    <title>Cadastrar cliente</title>
+</head>
+<body>
+    <header>
+        <a href="./../../index.html">Inicio</a>
+        <a href="./cadastrar.html">Cadastrar cliente</a>
+        <a href="./editar.html">Editar cliente</a>
+        <a href="./deletar.html">Deletar cliente</a>
+    </header>
+    <section>
+      
+        <h2>Cadastrar um novo cliente</h2>
+
+        <form action="#">
+
+            <input type="text" name="nome" placeholder="Nome completo">
+            <input type="date" name="data_nasc">
+            <select name="sexo" id="sexo">
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+            </select>
+            <input type="email" name="email" placeholder="bruno_monteiro@cordeiromaquinas.com.br">
+
+            <hr>
+            <h3>Cadastrar Endereço:</h3>
+            <input type="number" name="cep" placeholder="49088140">
+            <input type="text" name="rua" placeholder="Rua Treze">
+            <input type="number" name="numero" placeholder="499">
+            <input type="text" name="bairro" placeholder="Lamarão">
+            <input type="text" name="cidade" placeholder="Aracaju">
+            <select id="estado" name="estado">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="EX">Estrangeiro</option>
+            </select>
+
+            <hr>
+            <h3>Cadastrar Contato:</h3>
+            <input type="tel" name="telefone_fixo" placeholder="7928955976">
+
+            <button>Cadastrar</button>
+        </form>
+
+    </section>
+
+</body>
+</html>

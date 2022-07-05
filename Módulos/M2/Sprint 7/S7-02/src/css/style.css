@@ -1,0 +1,81 @@
+body{
+    font-family: sans-serif;
+    padding: 30px;
+}
+input, textarea, button{
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    background-color: #001457;
+    color: #fff;
+    padding: 30px;
+}
+
+header h1{
+    font-size: 2rem;
+    font-weight: 600;
+}
+header{
+    display: flex;
+    justify-content: end;
+}
+header a{
+    padding: 10px;
+    background: #858585;
+    border-radius: 3px;
+    margin: 0 3px;
+    text-decoration: none;
+    color: #fff;
+
+}
+
+main form{
+    text-align: right;
+}
+main form input, main form textarea, main form button{
+    display: block;
+    width: 100%;
+    font-size: 0.9rem;
+    outline: none;
+}
+main form input, main form textarea{
+    border: none;
+    padding: 13px;
+    margin: 0 0 18px;
+}
+main form textarea{
+    resize: none;
+    height: 100px;
+}
+ul{
+    list-style: none;
+}
+li{
+    margin-bottom: 100px;
+    border-bottom: solid 2px #ccc;
+}
+li h3{
+    margin-top: 30px;
+}
+
+input,select,button{
+    display: block;
+    margin: 10px;
+    width: 100%;
+    max-width: 400px;
+    height: 40px;
+    padding: 10px;
+    border: solid 1px #ccc;
+    border-radius: 3px;
+    
+}
+button{
+    cursor: pointer;
+    background-color: #858585;
+    color: #fff;
+}

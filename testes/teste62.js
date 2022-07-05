@@ -1,1 +1,11 @@
-const array = ['macaco', 'patos', 'aves', 'indio', 'bolas', 'copos']
+const sampleArray = [469, 755, 244, 245, 758, 450, 302, 17, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
+function samplePares(arr) {
+    let resultado = []
+    for (let i = 0; i<arr.length; i++) {
+        if(arr[i] % 2 == 0) {
+            resultado.push(arr[i])
+        }
+    }
+    return resultado
+}
+console.log(samplePares(sampleArray))
