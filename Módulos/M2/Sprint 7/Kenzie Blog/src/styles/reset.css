@@ -30,3 +30,11 @@ i {
 	font-family: var(--font-family);
 	transition: 0.5s;
 }
+.login:focus, .password:focus {
+	outline: none;
+}
+
+a {
+	text-decoration: underline;
+	cursor: pointer;
+}

@@ -6,8 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adam Neves: Kenzie Blog</title>
-  <script type="module" src="./src/script.js"></script>
-  <link rel="stylesheet" href="./src/styles/reset.css">
+  <script type="module" defer src="./src/js/Api.js"></script>
+  <link rel="stylesheet" href="./src/styles/toast.css">
+  <link rel="stylesheet" href="./src/styles/reset.css"> 
   <link rel="stylesheet" href="./src/styles/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,17 +18,64 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  
+  <script type="module" defer src="./src/js/toast.js"></script>
 </head>
 
 <body>
+<!-- Toast -->
+
+<div class="wrapper">
+  <div id="toast">
+      <div class="container-1">
+        <i class="fa fa-check-square" aria-hidden="true"></i>
+      </div>
+      <div class="container-2">
+          <p class="user-message">Bem vindo</p>
+          <p class="welcome-message">Logado(a) com sucesso!</p>
+      </div>
+      <button id="close">
+          &times;
+      </button>
+  </div>
+</div>
+
+<!-- Toast -->
+  <div class=" modal-login display-none">
+    <div class="modal login-box">
+      <form action="" class="login-inputs">
+        <h2 class="login-title">Log in</h2>
+        <input type="email" name="login" id="login" class="login" placeholder="Digite seu e-mail" required>
+        <input type="password" name="password" id="password" class="password" placeholder="Digite sua senha" required>
+        <button class="modal login-button"><i class="fa fa-sign-in" aria-hidden="true"></i></button>
+        <h6>Não tem conta ainda? <a class="register-link">Cadastre-se!</a></h6>
+        <h6>Esqueceu sua <a class="forgot-link">senha?</a></h6>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal-register display-none" >
+    <div class="modal register-box">
+      <form action="" class="login-inputs">
+        <h2 class="login-title">Registrar-se</h2>
+        <input type="text" class="login-register" placeholder="Digite seu usuário"> 
+        <input type="email"  class="email-register" placeholder="Digite seu e-mail" required>
+        <input type="password"  class="password-register" placeholder="Digite sua senha" required>
+        <input type="text" name="url" id="url" class="url-register" placeholder="URL da sua Imagem">
+        <button class="modal register-button"><i class="fa fa-sign-in" aria-hidden="true"></i></button>
+        <h6>Já tem uma conta? <a class="login-link">Faça Login!</a></h6>
+      </form>
+    </div>
+  </div>
+
   <header>
     <div>
       <figure>
-        <img src="./src/images/eu.jpg" alt="">
+        <img src="./src/images/kenzielogo.jpg" alt="" class="user-image">
         <h1></h1>
-        <h1>Adam Neves</h1>
+        <h1 class="user-name">Olá, Kenzinho(a)!</h1>
       </figure>
-      <button class="logoutButton">
+      <button class="logout-button">
         <i class="fa fa-sign-out fa-lg" aria-hidden="true"></i>
       </button>
     </div>
@@ -45,9 +93,7 @@
         <div class="card-content">
           <h1 class="post-card-author-name">Adam Neves</h1>
           <p class="card-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolorem animi
-            laudantium, nesciunt ea velit iure aliquid placeat ab ipsum eum similique id perspiciatis, repudiandae
-            veniam facilis quos quis laboriosam.
+            Mussum Ipsum, cacilds vidis litro abertis. Cevadis im ampola pa arma uma pindureta.Admodum accumsan disputationi eu sit. Vide electram sadipscing et per.Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi.
           </p>
         </div>
         <div class="icons">
@@ -55,21 +101,24 @@
           <i class="fa fa-trash-o" aria-hidden="true"></i>
         </div>
       </div>
+
       <div class="card post-card">
         <img src="./src/images/eu.jpg" alt="" class="card-picture">
         <div class="card-content">
-          <h1 class="post-card-author-name">Adãoverso</h1>
+          <h1 class="post-card-author-name">Adão no Multiverso da Kenzura</h1>
           <p class="card-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat dolorem animi
             laudantium, nesciunt ea velit iure aliquid placeat ab ipsum eum similique id perspiciatis, repudiandae
             veniam facilis quos quis laboriosam.
           </p>
         </div>
-        <div class="icons" style="display: none;">
+        <div class="icons display-none">
           <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
           <i class="fa fa-trash-o" aria-hidden="true"></i>
         </div>
       </div>
+
+
 
 
     </div>
