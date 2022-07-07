@@ -1,7 +1,7 @@
-let i;i <= 25;dois;return;
-1;true;1;25;
-2;true;2;24;
-3;true;3;23;
-4;true;4;22;
-5;true;5;21;
+let i;i <= 25;" um.push(i)";um;
+1;true;1;[1];
+2;true;2;[1,2];
+3;true;3;[1, 2, 3];
+4;true;4;[1, 2, 3, 4];
+5;true;5;[1, 2, 3, 4, 5];
 ;;;;

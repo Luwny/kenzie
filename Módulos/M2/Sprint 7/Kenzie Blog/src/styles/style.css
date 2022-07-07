@@ -1,0 +1,189 @@
+:root {
+    --main-color: #2f3640;
+    --main-hover: #2C3A47;
+    --font-family: 'Old Standard TT', serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    height: 8vh;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+header>div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header>div>figure {
+    display: flex;
+    align-items: center;
+}
+
+header>div>figure>h1 {
+    margin-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+header>div>figure>img {
+    width: 12%;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px -5px #000000;
+}
+
+header>div>button {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 15px 1px #000000;
+}
+
+header>div>button:hover {
+    background-color: var(--main-hover);
+    color: white;
+    border: 1px solid white;
+}
+
+main {
+    /* background: red; */
+    width: 40vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    margin: 4rem auto 0 auto;
+}
+
+main>.post>h1 {
+    color: var(--main-color);
+    margin: 10px;
+}
+
+.editor-wrapper {
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #E4E6EF;
+    margin-bottom: 3rem;
+    width: 100%;
+    display: flex;
+}
+
+.editor {
+    width: 100%;
+    height: 28px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    text-align: left;
+    padding: 20px 22px;
+    border-color: white;
+    font-size: 1.1rem;
+}
+
+.editor:focus {
+    outline: none;
+    height: 120px;
+}
+
+.editor::placeholder {
+    color: gray;
+    font-size: 16px;
+}
+
+.posts-title {
+    font-size: 1.25rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #333;
+}
+
+.posts {
+    margin-top: 4vh;
+    width: 100%;
+}
+
+.post-card {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 15px;
+    margin-bottom: 2rem;
+}
+
+.card-picture {
+    flex-shrink: 0;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-text {
+    font-size: 0.925rem;
+}
+
+.post-card-author-name {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+main>.posts>.card>img {
+    width: 12%;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+main>.posts>.card>h1 {
+    max-width: 5%;
+    flex-wrap: wrap;
+}
+
+main>.posts>.card>.containerPost {
+    width: 900%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textPost {
+    width: 80%;
+    height: 80%;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: justify;
+}
+i {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    font-size: 1.4rem
+}
+.fa-pencil-square-o:hover {
+    color: green;
+}
+.fa-trash-o:hover {
+    color: red;
+}
+.fa-sign-out {
+    font-size: 2rem;
+}
