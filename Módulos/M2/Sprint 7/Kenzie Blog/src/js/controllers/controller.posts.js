@@ -7,8 +7,7 @@ export class Posts {
         let id = localStorage.getItem('userId')
         let posts = await Api.getPosts()
 
-        posts.data.forEach(elem => {
-
+        posts.data.forEach(elem => {            
             const divPostCard = document.createElement('div')
             const imgUser = document.createElement('img')
             const divCardContent = document.createElement('div')
@@ -40,14 +39,14 @@ export class Posts {
 
             if (elem.user.id == id) {
                 iEdit.className = 'fa fa-pencil-square-o'
+                iEdit.id = 'pencil'
                 iTrash.className = 'fa fa-trash-o'
+                iTrash.id ='trash'
                 iEdit.ariaHidden = 'true'
                 iTrash.ariaHidden = 'true'
-            }
-        })
+            }              
+        }) 
+              
     }
 
-    static async edit() {
-
-    }
 }

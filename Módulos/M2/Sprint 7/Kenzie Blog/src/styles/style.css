@@ -101,6 +101,7 @@ main>.post>h1 {
     padding: 20px 22px;
     border-color: white;
     font-size: 1.1rem;
+    font-family: 'Old Standard TT', serif;
 }
 
 .editor:focus {
