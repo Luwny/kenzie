@@ -4,6 +4,7 @@ import { Logged } from "./controllers/controller.logged.js";
 import { Logout } from "./controllers/controller.logout.js";
 import { Posts } from "./controllers/controller.posts.js";
 import { UsersPosts } from "./controllers/controller.createPost.js";
+import { Toast } from "./toast.js";
 
 class Api {
   static token = ""
@@ -11,24 +12,33 @@ class Api {
   static BASE_URL = "https://blog-m2.herokuapp.com"
 
   static async login(data) {
-    const token = await fetch(this.BASE_URL + "/users/login", {
-      method: "POST", // Indica o tipo de requisição GET, POST, PATCH, DELETE
-      headers: {
-        "Content-Type": "application/json", // Indica o tipo de dado da requisição
-      },
-      body: JSON.stringify(data), // Informando as informações do usuário
-    })
-      .then((res) => res.json())
-      .then((res) => res)
-      .catch((error) => console.log(error));
 
-    Api.token = token //Sempre que fizermos a requisição nosso token será atualizado
-  
+    try {
+      const apiResponse = await fetch(this.BASE_URL + "/users/login", {
+        method: "POST", // Indica o tipo de requisição GET, POST, PATCH, DELETE
+        headers: {
+          "Content-Type": "application/json", // Indica o tipo de dado da requisição
+        },
+        body: JSON.stringify(data), // Informando as informações do usuário
+      })
 
-    localStorage.setItem('token', JSON.stringify(token.token))
-    localStorage.setItem('userId', JSON.stringify(token.userId))
+      if (apiResponse.status != 200) {
+        throw new Error
+      }
+      const token = await apiResponse.json()
 
-    return token;
+      Api.token = token //Sempre que fizermos a requisição nosso token será atualizado
+
+      localStorage.setItem('token', JSON.stringify(token.token))
+      localStorage.setItem('userId', JSON.stringify(token.userId))
+
+      return token;
+
+    } catch (error) {
+      return Toast.showError('Cheque suas credenciais.')
+    }
+
+
   }
 
   static async getUser(id, token) {
@@ -45,25 +55,35 @@ class Api {
       .then(res => res.json())
       .then(data => data)
       .catch((error) => console.log(error))
-      
+
     return user
   }
 
-  
+
 
   static async createUser(data) {
-    const response = await fetch(this.BASE_URL + "/users/register", {
-      method: "POST", // Indica o tipo de requisição GET, POST, PATCH, DELETE
-      headers: {
-        "Content-Type": "application/json", // Indica o tipo de dado da requisição
-      },
-      body: JSON.stringify(data), // Informando as informações do usuário
-    })
-      .then((res) => res.json())
-      .then((res) => res)
-      .catch((error) => console.log(error));
+    try {
+      const apiResponse = await fetch(this.BASE_URL + "/users/register", {
+        method: "POST", // Indica o tipo de requisição GET, POST, PATCH, DELETE
+        headers: {
+          "Content-Type": "application/json", // Indica o tipo de dado da requisição
+        },
+        body: JSON.stringify(data), // Informando as informações do usuário
+      })
 
-    return response;
+      if (apiResponse.status != 201) {
+        throw new Error
+      }
+      const response = await apiResponse.json()
+
+      this.returnToLogin()
+      Toast.show('Parabéns!', 'Sua conta foi criada com sucesso.')
+      return response;
+
+    } catch (error) {
+      return Toast.showError('Cadastro não realizado.')
+    }
+
 
   }
 
@@ -146,7 +166,7 @@ class Api {
 
   static showModalLogin() {
     const modalLogin = document.querySelector('.modal-login')
-    modalLogin.classList.remove('display-none')    
+    modalLogin.classList.remove('display-none')
   }
 
   static createAccountModal() {
@@ -180,7 +200,6 @@ class Api {
 
 export { Api }
 
-Register.request()
 Login.request()
 Logged.areYouLogged()
 Api.createAccountModal()
@@ -188,4 +207,5 @@ Api.returnToLogin()
 Logout.request()
 Posts.show()
 UsersPosts.create()
+Register.request()
 

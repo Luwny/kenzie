@@ -1,22 +1,29 @@
 import { Api } from "../Api.js"
 import { User } from "./controller.user.js"
-import { Toast } from "../toast.js"
 
 export class Logged {
 
-    static async areYouLogged() {        
+    static async areYouLogged() {
+        const hasToken = this.verifyToken()
+
+        if (!hasToken) {
+            return Api.showModalLogin()
+        }
+
+        let user = await Api.getUser(hasToken.id, hasToken.token)
+        User.getUserInfos()
+        
+    }
+
+    static verifyToken() {
         let token = localStorage.getItem('token')
         let id = localStorage.getItem('userId')
-        let user = await Api.getUser(id, token)
-        if (!token && !id) {
-            Api.showModalLogin()
 
+        if (!token || !id) {
+            return false
         }
-        if (token && id) {
-            User.getUserInfos()
-            Toast.show(`Olá, ${user.username}`, `Aproveite o blog, foi feito com muito carinho!`)
-            
-        }
+
+        return {token, id}
     }
 }
 

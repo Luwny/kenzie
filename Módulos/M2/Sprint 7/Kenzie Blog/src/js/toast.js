@@ -5,9 +5,14 @@ const toast = document.getElementById("toast");
 const toastError = document.getElementById("toast-error")
 const userMessage = document.querySelector('.user-message')
 const welcomeMessage = document.querySelector('.welcome-message')
+const errorMessage = document.querySelector('.user-message-error')
+const errorMessagee = document.querySelector('.welcome-message-error')
 
 export class Toast {
-    static async showError() {
+    static async showError(message) {
+
+        errorMessage.innerText = 'Erro'
+        errorMessagee.innerText = message
 
         clearTimeout(x);
         toastError.style.transform = "translateX(0)";

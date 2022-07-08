@@ -8,7 +8,7 @@ export class Login {
 
     const btnLogin = document.querySelector('.login-button')
 
-    btnLogin.addEventListener('click', async (event) => {  
+    btnLogin.addEventListener('click', async (event) => {
 
       event.preventDefault()
 
@@ -20,15 +20,28 @@ export class Login {
         "password": password
       }
 
-      await Api.login(data)
       if (!login || !password) {
         localStorage.clear()
-        return Toast.showError()
+        return Toast.showError('Cheque suas credenciais.')
+      }      
+       
+      await Api.login(data)
+
+      let token = localStorage.getItem('token')
+      let id = localStorage.getItem('userId')   
+
+      
+
+      if (!token || !id) {        
+        return Toast.showError('Cheque suas credenciais.')
       }
+      
+
+           
       //Timer pra recarregar a página
       setTimeout(() => {
-        location.reload();
-      }, "500")
+        location.reload();     
+      }, "500")      
     })
   }
 }
