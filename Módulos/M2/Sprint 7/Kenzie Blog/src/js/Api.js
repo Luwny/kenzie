@@ -140,10 +140,9 @@ class Api {
     return response;
   }
 
-  static showModal() {
+  static showModalLogin() {
     const modalLogin = document.querySelector('.modal-login')
-    modalLogin.classList.remove('display-none')
-    
+    modalLogin.classList.remove('display-none')    
   }
 
   static createAccountModal() {

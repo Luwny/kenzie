@@ -9,12 +9,13 @@ export class Logged {
         let id = localStorage.getItem('userId')
         let user = await Api.getUser(id, token)
         if (!token && !id) {
-            Api.showModal()
+            Api.showModalLogin()
 
         }
         if (token && id) {
             User.getUserInfos()
-            Toast.show(`Olá, ${user.username}`, `Você já está logado!`)
+            Toast.show(`Olá, ${user.username}`, `Aproveite o blog, foi feito com muito carinho!`)
+            
         }
     }
 }

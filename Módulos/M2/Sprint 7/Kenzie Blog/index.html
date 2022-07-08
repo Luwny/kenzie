@@ -6,10 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adam Neves: Kenzie Blog</title>
-  <script type="module" defer src="./src/js/Api.js"></script>
-  <link rel="stylesheet" href="./src/styles/toast.css">
+  <script type="module" defer src="./src/js/Api.js"></script>  
   <link rel="stylesheet" href="./src/styles/reset.css"> 
   <link rel="stylesheet" href="./src/styles/style.css">
+  <link rel="stylesheet" href="./src/styles/toast.css">
+  <link rel="stylesheet" href="./src/styles/toasterror.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
@@ -33,6 +34,21 @@
       <div class="container-2">
           <p class="user-message">Bem vindo</p>
           <p class="welcome-message">Logado(a) com sucesso!</p>
+      </div>
+      <button id="close">
+          &times;
+      </button>
+  </div>
+</div>
+
+<div class="wrapper-error">
+  <div id="toast-error">
+      <div class="container-1-error">
+        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+      </div>
+      <div class="container-2-error">
+          <p class="user-message-error">Login não realizado!</p>
+          <p class="welcome-message-error">Cheque suas credenciais.</p>
       </div>
       <button id="close">
           &times;

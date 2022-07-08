@@ -5,8 +5,7 @@ export class Register {
     static request() {
         const btnRegister = document.querySelector('.register-button')
         
-        btnRegister.addEventListener('click', event => {
-            event.preventDefault()
+        btnRegister.addEventListener('click', () => {
             
             const login = document.querySelector('.login-register').value
             const email = document.querySelector('.email-register').value
@@ -20,7 +19,6 @@ export class Register {
                 "password": password
               }
             Api.createUser(newUser)
-            Api.showModal()
         })
     }
 }
