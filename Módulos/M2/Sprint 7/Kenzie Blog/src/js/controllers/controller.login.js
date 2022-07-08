@@ -1,5 +1,4 @@
 import { Api } from "../Api.js";
-import { User } from "./controller.user.js";
 import { Toast } from "../toast.js";
 
 

@@ -3,6 +3,7 @@ import { Register } from "./controllers/controller.register.js";
 import { Logged } from "./controllers/controller.logged.js";
 import { Logout } from "./controllers/controller.logout.js";
 import { Posts } from "./controllers/controller.posts.js";
+import { UsersPosts } from "./controllers/controller.createPost.js";
 
 class Api {
   static token = ""
@@ -22,6 +23,7 @@ class Api {
       .catch((error) => console.log(error));
 
     Api.token = token //Sempre que fizermos a requisição nosso token será atualizado
+  
 
     localStorage.setItem('token', JSON.stringify(token.token))
     localStorage.setItem('userId', JSON.stringify(token.userId))
@@ -66,6 +68,8 @@ class Api {
   }
 
   static async getPosts() {
+    this.token = localStorage.getItem('token') // Recebendo token
+    this.token = JSON.parse(this.token) //  Tratando, pois precisa tirar o ""
     const posts = await fetch(this.BASE_URL + '/posts?page=1', {
       method: "GET", // Indica o tipo de requisição GET, POST, PATCH, DELETE
       headers: {
@@ -182,4 +186,6 @@ Logged.areYouLogged()
 Api.createAccountModal()
 Api.returnToLogin()
 Logout.request()
+Posts.show()
+UsersPosts.create()
 
