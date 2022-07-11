@@ -10,7 +10,8 @@ const errorMessagee = document.querySelector('.welcome-message-error')
 
 export class Toast {
     static async showError(message) {
-
+        const music = new Audio('src/music/error.mp3');
+        music.play()
         errorMessage.innerText = 'Erro'
         errorMessagee.innerText = message
 
@@ -18,9 +19,24 @@ export class Toast {
         toastError.style.transform = "translateX(0)";
         x = setTimeout(() => {
             toastError.style.transform = "translateX(400px)"
-        }, 3000);
+        }, 1800);
     }
+    static async register(message) {
+        const music = new Audio('src/music/success.mp3');
+        music.play()
+        userMessage.innerText = `Olá`
+        welcomeMessage.innerText = message
+
+        clearTimeout(x);
+        toast.style.transform = "translateX(0)";
+        x = setTimeout(() => {
+            toast.style.transform = "translateX(400px)"
+        }, 1800);
+    }
+
     static async show(user, message) {
+        const music = new Audio('src/music/success.mp3');
+        music.play()
         let id = localStorage.getItem('userId')
         let token = localStorage.getItem('token')
         user = await Api.getUser(id, token)
@@ -32,7 +48,7 @@ export class Toast {
         toast.style.transform = "translateX(0)";
         x = setTimeout(() => {
             toast.style.transform = "translateX(400px)"
-        }, 3000);
+        }, 1800);
     }
     static close() {
         toast.style.transform = "translateX(400px)";

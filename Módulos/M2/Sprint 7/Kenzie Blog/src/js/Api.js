@@ -3,7 +3,6 @@ import { Register } from "./controllers/controller.register.js";
 import { Logged } from "./controllers/controller.logged.js";
 import { Logout } from "./controllers/controller.logout.js";
 import { Posts } from "./controllers/controller.posts.js";
-import { UsersPosts } from "./controllers/controller.createPost.js";
 import { Toast } from "./toast.js";
 
 class Api {
@@ -77,7 +76,7 @@ class Api {
       const response = await apiResponse.json()
 
       this.returnToLogin()
-      Toast.show('Parabéns!', 'Sua conta foi criada com sucesso.')
+      Toast.register('Conta criada com sucesso!')
       return response;
 
     } catch (error) {
@@ -155,10 +154,8 @@ class Api {
       headers: {
         "Content-Type": "application/json", // Indica o tipo de dado da requisição
         "Authorization": `Bearer ${Api.token}` // Adicionamos um token de acesso validado pelo header Authorization
-      },
-      body: JSON.stringify(data), // Informando as informações do usuário
+      }
     })
-      .then((res) => res.json())
       .then((res) => res)
       .catch((error) => console.log(error));
     return response;
@@ -205,7 +202,12 @@ Logged.areYouLogged()
 Api.createAccountModal()
 Api.returnToLogin()
 Logout.request()
+Posts.edit()
+Posts.create()
 Posts.show()
-UsersPosts.create()
+window.setInterval(() => {
+  Posts.show()
+}, 30000)
+Posts.delete()
 Register.request()
 

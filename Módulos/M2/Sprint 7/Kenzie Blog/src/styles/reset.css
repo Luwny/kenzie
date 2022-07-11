@@ -27,7 +27,6 @@ i {
 	cursor: pointer;
 }
 * {
-	font-family: var(--font-family);
 	transition: 0.5s;
 }
 .login:focus, .password:focus {

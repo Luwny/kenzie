@@ -37,11 +37,11 @@ export class Login {
       }
       
 
-           
+      Toast.show('Logado!', 'Carregando suas credenciais.')
       //Timer pra recarregar a página
       setTimeout(() => {
         location.reload();     
-      }, "500")      
+      }, "2000")      
     })
   }
 }

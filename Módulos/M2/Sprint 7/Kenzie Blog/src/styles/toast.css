@@ -1,14 +1,3 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Poppins",sans-serif;
-    font-size: 14px;
-    border: none;
-}
-body{
-    background-color: #f9f9f9;
-}
 .wrapper{
     width: 420px;
     padding: 30px 20px;
@@ -16,6 +5,7 @@ body{
     bottom: 50px;
     right: 0;
     overflow: hidden;
+    z-index: 1;
 }
 #show-toast{
     position: absolute;

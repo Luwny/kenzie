@@ -1,0 +1,39 @@
+<html>
+
+<head>
+
+<script language="javascript">
+
+var counter = 0;
+
+window.setInterval("refreshDiv()", 5000);
+
+function refreshDiv(){
+
+counter = counter + 1;
+
+document.getElementById("teste").innerHTML = "Testando... " + counter;
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div id="teste">
+
+Testando
+
+</div>
+
+<div id="estatico">
+
+Parte estática da página.
+
+</div>
+
+</body>
+
+</html>

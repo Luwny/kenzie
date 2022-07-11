@@ -9,8 +9,6 @@ export class Logged {
         if (!hasToken) {
             return Api.showModalLogin()
         }
-
-        let user = await Api.getUser(hasToken.id, hasToken.token)
         User.getUserInfos()
         
     }
