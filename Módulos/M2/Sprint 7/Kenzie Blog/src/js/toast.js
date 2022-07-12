@@ -19,7 +19,7 @@ export class Toast {
         toastError.style.transform = "translateX(0)";
         x = setTimeout(() => {
             toastError.style.transform = "translateX(400px)"
-        }, 1800);
+        }, 3000);
     }
     static async register(message) {
         const music = new Audio('src/music/success.mp3');

@@ -1,13 +1,18 @@
-const array = [120, 300, -250, 200, -250, 600]
-function gestaoFinanceira(param) {
-    let counter = 0
-    for (let i = 0; i < param.length; i++) {
-        if (Math.sign(param[i]) === 1) {
-            counter++
-        }
-    }
-    console.log (counter)
-}
-gestaoFinanceira(array);
+ function teste() {
+    let duzentos = 0
+    let cem = 0
+    let salario = 2754
 
-console.log(Math.sign(param[i]))
+    while (salario >= 200) {
+        duzentos++
+        salario -= 200
+    }
+    while (salario >= 100) {
+        cem++
+        salario -= 100
+    }
+    console.log(`Usamos ${duzentos} notas de R$ 200,00`)
+    console.log(`Usamos ${cem} notas de R$ 100,00`)
+    console.log(`Valor atual: R$ ${salario}`)
+ }
+ teste()

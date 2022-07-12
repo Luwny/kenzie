@@ -60,30 +60,64 @@ class Api {
 
 
 
-  static async createUser(data) {
-    try {
-      const apiResponse = await fetch(this.BASE_URL + "/users/register", {
-        method: "POST", // Indica o tipo de requisição GET, POST, PATCH, DELETE
-        headers: {
-          "Content-Type": "application/json", // Indica o tipo de dado da requisição
-        },
-        body: JSON.stringify(data), // Informando as informações do usuário
-      })
-
-      if (apiResponse.status != 201) {
-        throw new Error
+/*     static async createUser(data) {
+      try {
+        const apiResponse = await fetch(this.BASE_URL + "/users/register", {
+          method: "POST", // Indica o tipo de requisição GET, POST, PATCH, DELETE
+          headers: {
+            "Content-Type": "application/json", // Indica o tipo de dado da requisição
+          },
+          body: JSON.stringify(data), // Informando as informações do usuário
+        })
+  
+        if (apiResponse.status != 201) {
+          throw new Error
+        }
+        const response = await apiResponse.json()
+  
+        this.returnToLogin()
+        Toast.register('Conta criada com sucesso!')
+        return response;
+      } catch (error) {
+        return Toast.showError('Cadastro não realizado.')
       }
-      const response = await apiResponse.json()
+    } */
 
-      this.returnToLogin()
-      Toast.register('Conta criada com sucesso!')
-      return response;
+  static async createUser(data) {
+    const apiResponse = await fetch(this.BASE_URL + "/users/register", {
+      method: "POST", // Indica o tipo de requisição GET, POST, PATCH, DELETE
+      headers: {
+        "Content-Type": "application/json", // Indica o tipo de dado da requisição
+      },
+      body: JSON.stringify(data), // Informando as informações do usuário
+    })
+      .then(res => res.json())
+      .catch((error) => error);
 
-    } catch (error) {
-      return Toast.showError('Cadastro não realizado.')
+    /* if (apiResponse.status != 201) {
+      throw new Error
+    } */
+    console.log(apiResponse)
+    let errorAvatar = 'avatarUrl is a required field'
+    let errorUser = 'An user with the same username is already registered'
+    let errorEmail = 'An user with the same email is already registered'
+    let errorPassword = 'password must have at least six digits, one capital letter and one number'
+ 
+    if (apiResponse.message == errorPassword) {
+      return Toast.showError('A senha tem que ter no mínimo: 6 dígitos, 1 letra maiúscula e 1 número')
+    }
+    if (apiResponse.message == errorEmail) {
+      return Toast.showError('Já existe um usuário com o mesmo e-mail!')
+    }
+    if (apiResponse.message == errorUser) {
+      return Toast.showError('Já existe um usuário com o nome de usuário!')
+    }
+    if (apiResponse.message == errorAvatar) {
+      return Toast.showError('O campo de imagem deve ser preenchido com um link de uma imagem')
     }
 
-
+    this.returnToLogin()
+    return Toast.register('Conta criada com sucesso!')    
   }
 
   static async getPosts() {
@@ -180,7 +214,7 @@ class Api {
   }
 
   static returnToLogin() {
-
+    const btnRegister = document.querySelector('.register-button')
     const btnLogin = document.querySelector('.login-link')
     btnLogin.addEventListener('click', event => {
       event.preventDefault()

@@ -1,5 +1,3 @@
-import { Api } from "../Api.js";
-
 export class Logout {
 
     static request() {
