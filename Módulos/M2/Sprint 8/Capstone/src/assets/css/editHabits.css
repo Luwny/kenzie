@@ -1,0 +1,130 @@
+.container__pai {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.507);
+}
+.modal-edit-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 70%;
+  height: max-content;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  padding: 32px;
+}
+
+.modal-header {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.modal-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--var-gray-1);
+}
+.modal-close {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--var-gray-3);
+}
+#category {
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.24);
+}
+
+.modal-close:hover {
+  color: #000;
+}
+
+.modal-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal-edit-form label {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--var-gray-2);
+}
+
+.modal-edit-form input {
+  width: max-content;
+  font-size: 11px;
+  font-weight: 400;
+  height: max-content;
+  background-color: var(--var-gray-5);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: var(--var-gray-2);
+}
+
+.form-checkbox {
+  font-size: 16px;
+  width: 100%;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  margin-top: 32px;
+}
+
+.modal-button {
+  font-size: 16px;
+  font-weight: 600;
+  height: 40px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  color: var(--var-gray-2);
+}
+
+.modal-button:hover {
+  color: var(--var-gray-6);
+  background-color: var(--var-brand-2);
+}
+
+.button-delete {
+  transition: 0.5s;
+  width: 40%;
+}
+
+.button-save {
+  transition: 0.5s;
+  width: 60%;
+  background-color: var(--var-brand-3);
+  color: var(--var-brand-2);
+}
+.button-save:hover {
+  transition: 0.5s;
+  background-color: var(--var-sucess);
+}
+.button-delete:hover {
+  transition: 0.5s;
+  background-color: var(--var-error-1);
+}
+
+@media (min-width: 768px) {
+  .modal-edit-container {
+    width: 430px;
+  }
+  .modal-edit-form .input {
+    font-size: 14px;
+  }
+} ;

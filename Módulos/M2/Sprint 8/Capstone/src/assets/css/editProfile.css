@@ -1,0 +1,97 @@
+.modal-edit-container {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 70%;
+  height: max-content;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  padding: 32px;
+}
+
+.modal-header {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.modal-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--var-gray-1);
+}
+.modal-close {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--var-gray-3);
+}
+
+.modal-close:hover {
+  color: #000;
+}
+
+.modal-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal-edit-form label {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--var-gray-2);
+}
+
+.modal-edit-form .input {
+  font-size: 11px;
+  font-weight: 400;
+  height: 40px;
+  background-color: var(--var-gray-5);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: var(--var-gray-2);
+}
+
+.modal-actions-profile {
+  justify-content: center;
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  margin-top: 32px;
+}
+
+.modal-button {
+  font-size: 16px;
+  font-weight: 600;
+  height: 40px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  transition: border 500ms;
+  color:var(--var-brand-2);
+}
+.fa-pencil-square-o, .fa-sign-out {
+  transition: 0.05s;
+}
+.fa-pencil-square-o:hover, .fa-sign-out:hover {
+  transition: 0.05s;
+}
+.modal-button:hover {
+  color:var(--var--6) ;
+  background-color: var(--var-brand-2);
+}
+
+.button-save {
+  width: 100%;
+  background-color: var(--var-brand-3 );
+}
+
+@media (min-width: 768px) {
+  .modal-edit-container {
+    width: 430px;
+  }
+  .modal-edit-form .input {
+    font-size: 14px;
+  }
+} ;

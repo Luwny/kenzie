@@ -1,0 +1,311 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+}
+
+.header-content .title-blog {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--var-brand-1);
+}
+
+.header-content img {
+  box-shadow: 0px 0px 14px 2px rgba(0, 0, 0, 0.15);
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  margin: 10px;
+}
+
+.user-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  background-color: var(--var-brand-1);
+  gap: 20px;
+}
+
+.user-content img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin: 10px;
+  box-shadow: var(--var-shadow);
+}
+
+.user-content .user-name {
+  color: white;
+  font-size: 3rem;
+  font-weight: bolder;
+  font-family: var(--var-titles);
+}
+
+.content {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  background-color: white;
+  border-radius: 10px;
+
+}
+
+.select-tasks,
+.select-all-tasks,
+.title-blog {
+  cursor: pointer;
+}
+
+.task-options {
+  width: 100%;
+  margin-top: 2rem;
+  border-bottom: 1px solid var(--var-gray-3);
+}
+
+.task-options h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: var(--var-titles);
+}
+
+.geral-tasks {
+  margin-top: 2rem;
+  display: flex;
+  text-align: center;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+  gap: 30px;
+}
+
+.title-tasks {
+  margin-right: auto;
+  margin-left: 10px;
+}
+
+.task-options div h4 {
+  padding: 5px 0px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.create-tasks {
+  width: 15%;
+  background-color: var(--var-brand-1);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.all-tasks {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;  
+  display: flex;
+  justify-content: space-between;
+  box-shadow: var(--var-shadow);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.task-title-status,
+.task-edit-title {
+  margin: 0px 20px 0px 20px;
+}
+
+.task-status,
+.task-title,
+.task-description,
+.task-category,
+.task-edit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  gap: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.task-status .fa-check-checked {
+  border: none;
+  background-color: var(--var-sucess);
+}
+
+.fa-check {
+  cursor: pointer;
+  outline: 1px solid var(--var-gray-3);
+  outline-style: auto;
+  color: var(--var-gray-6);
+}
+
+.task-title p {
+  width: 100%;
+}
+
+.task-description p {
+  width: 100%;
+}
+
+.category-button {
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  color: var(--var-brand-1);
+  background-color: var(--var-brand-3);
+}
+
+.load-more {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid var(--var-gray-3);
+}
+
+.load-more-button {
+
+  color: white;
+  margin: 10px;
+  margin-top: 3rem;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--var-brand-1);
+}
+
+.task-edit i:hover {
+  color: var(--var-sucess);
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  background-color: #f9f9f9;
+  left: 7px;
+  width: auto;
+  white-space: nowrap;
+  box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  gap: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.dropdown-edit {  
+  font-weight: bold;
+}
+
+.dropdown-edit:hover {
+  color: var(--var-sucess);
+  text-decoration: underline;
+}
+
+.dropdown-logout {  
+  font-weight: bold;
+}
+
+.dropdown-logout:hover {
+  color: var(--var-error-2);
+  text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-content {
+  visibility: visible;
+  opacity: 1;
+  display: flex;
+  width: auto;
+}
+
+.create-title-input,
+.create-description-input {
+  padding: 10px;
+}
+
+.modal-edit-form>input {
+  width: 100%;
+}
+
+@media (max-width: 940px) {
+  .content {
+    width: 95%;
+  }
+
+  .create-container {
+    width: 80%;
+    height: 400px;
+  }
+
+  .all-tasks {
+    overflow-x: auto;
+  }
+
+  #user-name {
+    font-size: 1.5rem;
+  }
+
+  .title-tasks {
+    display: none;
+  }
+
+  .geral-tasks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .task-category,
+  .task-description {
+    display: none;
+  }
+
+  .task-title {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .task-title-title p{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .create-tasks {
+    width: 20%;
+  }
+}

@@ -1,0 +1,101 @@
+.delete-habits-container-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.507);
+}
+
+.delete-habits-container {
+    gap: 4px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    height: inherit;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 98%;
+    max-width: 100%;
+    height: max-content;
+    border-radius: 0.5rem;
+    padding: 2rem 1rem;
+    background-color: white;
+    padding: 2rem;
+}
+
+.delete-habits-container-button {
+    margin-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+h2,
+h3 {
+    font-size: 1.25rem;
+}
+
+/* p {
+    font-style: italic;
+    font-size: 0.7rem;
+    margin-top: 0.8rem;
+} */
+.delete-button-close {
+    color: var(--var-gray-3);
+    background-color: white;
+
+}
+
+.delete-button-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.delete-button-cancel {
+    padding: 5px;
+    width: 0.5rem;
+    height: 2.5rem;
+    background-color: var(--var-gray-3);
+    border-radius: 0.25rem;
+    margin-right: 0.5rem;
+}
+
+.delete-button {
+    color: var(--var-gray-6);
+    width: 0.5rem;
+    height: 2.5rem;
+    background-color: var(--var-error-2);
+    border-radius: 0.25rem;
+}
+
+@media (min-width: 768px) {
+    .delete-habits-container {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .delete-habits-container {
+        width: 30%;
+    }
+}
+
+.delete-button-cancel {
+    width: 11.938rem;
+}
+
+.delete-button {
+    width: 11.938rem;
+}

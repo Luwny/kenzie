@@ -1,0 +1,116 @@
+.create-container-principal {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.507);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.create-container {
+    position: relative;
+    display: flex;
+    height: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    background-color: white;
+    height: 100%;
+    width: 30%;
+    height: max-content;
+    border-radius: 0.5rem;
+    padding: 3rem;
+}
+
+.close {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 20px;
+}
+
+.create-delete {
+    margin-bottom: 1rem;
+    width: max-content;
+    display: flex;
+    align-items: center;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.24);
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    resize: none;
+    outline: none;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+.create-button {
+    color: var(--var-gray-3);
+    background-color: white;
+    /*var(--var-brand-3);*/
+    border-color: white;
+    /*var(--var-brand-3);*/
+    font-size: 1.25rem;
+}
+
+label {
+    color: var(--var-gray-2);
+    font-size: 0.875rem;
+    margin-bottom: 0.3rem;
+    margin-top: 0.3rem;
+}
+
+#title,
+#category,
+#description {
+    background-color: #F1F3F5;
+    border: 2px solid #F1F3F5;
+    border-radius: 4px;
+    width: 98%;
+    height: 2.5rem;
+    margin-top: 0.125rem;
+    margin-bottom: 0.125rem;
+    outline: none;
+    border: none;
+    -webkit-appearance: none;
+    text-align: center;
+}
+
+#category:hover {
+    border: none;
+
+}
+
+#description {
+    height: 5rem;
+}
+
+.create-button-inserir {
+    background-color: var(--var-brand-3);
+    color: var(--var-brand-2);
+    border-radius: 0.25rem;
+    width: 98%;
+    height: 2.5rem;
+    margin-top: 1rem;
+}
+
+.create-button-inserir:hover {
+    background-color: var(--var-brand-1);
+    color: var(--var-gray-6);
+}

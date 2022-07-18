@@ -1,0 +1,124 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    border-radius: 20px;
+    width: 40%;
+    height: 500px;
+    box-shadow: 0px 0px 14px 2px rgba(0,0,0,0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.presentation-subtitle{
+    font-size: 1px;
+}
+.presentation-tips{
+    display: none;
+}
+
+.presentation-tips{
+    display: block;
+}
+.presentation-subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.presentation-subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.kenzie-habits-presentation {
+box-sizing: border-box;
+padding: 15px;
+display: flex;
+justify-content: center;
+gap: 20px;
+align-items: center;
+flex-direction: column;
+width: 50%;
+height: 100%;
+background-color: var(--var-brand-2)
+}
+.kenzie-habits-login {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+width: 50%;
+height: 100%;
+background-color: white;
+}
+.kenzie-habits-login > form {
+width: 80%;
+}
+.kenzie-habits-login > form > input {
+width: 100%;
+margin: 10px;
+padding: 10px;
+border-radius: 10px;
+border: none;
+box-shadow: 0px 0px 14px 2px rgba(0,0,0,0.15);
+}
+
+.kenzie-habits-login > form > button {
+border-radius: 10px;
+color: white;
+width: max-content;
+background-color: var(--var-brand-2);
+padding: 10px;
+border: none;
+margin-top: 8px;
+}
+.kenzie-habits-login > form {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.password-input {
+border-bottom: 20px;
+}
+.presentation-title, .presentation-subtitle, .presentation-tips {
+color: white;
+text-align: center;
+}
+
+.presentation-title {
+font-size: 2.5rem;
+font-weight: bolde0r;
+}
+.presentation-subtitle {
+font-size: 1rem;
+font-weight: 400;
+}
+.presentation-tips {
+font-size: 0.9rem;
+font-style: italic;
+}
+
+
+
+@media (max-width: 768px) {
+    main {
+        width: 90%;
+        height: 300px;
+    }
+    .presentation-tips {
+        display: none;
+    }
+    .presentation-title {
+        font-size: 2;
+        font-family: var(--var-titles);
+        font-weight: bolder;
+    }
+    .presentation-subtitle {
+        font-size: 0.8rem;
+        font-style: italic;
+    }
+}

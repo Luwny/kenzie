@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kenzie Habit</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./src/assets/css/reset.css" />
+  <link rel="stylesheet" href="./src/assets/css/components.css" />
+  <link rel="stylesheet" href="./src/assets/css/editProfile.css" />
+  <link rel="stylesheet" href="./src/assets/css/createHabits.css" />
+  <link rel="stylesheet" href="./src/assets/css/deleteHabits.css" />
+  <link rel="stylesheet" href="./src/assets/css/editHabits.css" />
+  <link rel="stylesheet" href="./src/assets/css/home.css" />
+  <link rel="stylesheet" href="./src/assets/css/toast.css">
+  <link rel="stylesheet" href="./src/assets/css/toastError.css">
+</head>
+
+<body>
+  <!-- Toast -->
+  <div class="wrapper">
+    <div id="toast">
+      <div class="container-1">
+        <i class="fa fa-hand-peace-o" aria-hidden="true"></i>
+      </div>
+      <div class="container-2">
+        <p class="user-message">Bem vindo</p>
+        <p class="welcome-message">Logado(a) com sucesso!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper-error">
+    <div id="toast-error">
+      <div class="container-1-error">
+        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+      </div>
+      <div class="container-2-error">
+        <p class="user-message-error">Login não realizado!</p>
+        <p class="welcome-message-error">Cheque suas credenciais.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <header>
+    <div class="header-content">
+      <h1 class="title-blog" onclick="window.location.reload()">Kenzie Habit</h1>
+      <figure class="dropdown">
+        <img src="./src/assets/img/icon.jpg" alt="Usuário" />
+      </figure>
+    </div>
+    <section class="user-content">
+      <img src="./src/assets/img/icon.jpg" alt="Usuário" />
+      <h2 class="user-name" id="user-name">Usuário</h2>
+    </section>
+  </header>
+  <main class="content">
+    <div class="task-options">
+      <div class="geral-tasks">
+        <h3 class="title-tasks">Tarefas</h3>
+        <h4 class="select-all-tasks" onclick="window.location.reload()">Todos</h4>
+        <h4 class="select-tasks">Concluído</h4>
+        <h4 class="create-tasks">Novo hábito</h4>
+      </div>
+    </div>
+    <div class="all-tasks">
+      <div class="task-status">
+        <div class="task-title-status">
+          <h1>Status</h1>
+        </div>
+      </div>
+      <div class="task-title">
+        <div class="task-title-title">
+          <h1>Titulo</h1>
+        </div>
+      </div>
+      <div class="task-description">
+        <div class="task-title-description">
+          <h1>Descrição</h1>
+        </div>
+      </div>
+      <div class="task-category">
+        <div class="task-title-category">
+          <h1>Categoria</h1>
+        </div>
+      </div>
+      <div class="task-edit">
+        <div class="task-edit-title">Editar</div>
+      </div>
+    </div>
+
+    <div class="load-more">
+      <button class="load-more-button" onclick="window.location.reload()">Atualizar Hábitos</button>
+    </div>
+  </main>
+  <script type="module" src="home.js"></script>
+  <div id="modal-delete"></div>
+  <div id="modal-edit"></div>
+  <div id="profile-edit"></div>
+  <div id="modal-create"></div>
+</body>
+
+</html>
